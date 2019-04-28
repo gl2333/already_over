@@ -1,0 +1,43 @@
+# Project: sdhw_test_demo
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = source/main.o source/test.o source/test_list.o source/ui.o source/usb_dev.o source/amp.o
+LINKOBJ  = source/main.o source/test.o source/test_list.o source/ui.o source/usb_dev.o source/amp.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc  Ginkgo_Driver.dll -g3
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"./include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++" -I"./include"
+BIN      = sdhw_test_demo.exe
+CXXFLAGS = $(CXXINCS) -g3
+CFLAGS   = $(INCS) -g3
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+source/main.o: source/main.cpp
+	$(CPP) -c source/main.cpp -o source/main.o $(CXXFLAGS)
+
+source/test.o: source/test.cpp
+	$(CPP) -c source/test.cpp -o source/test.o $(CXXFLAGS)
+
+source/test_list.o: source/test_list.cpp
+	$(CPP) -c source/test_list.cpp -o source/test_list.o $(CXXFLAGS)
+
+source/ui.o: source/ui.cpp
+	$(CPP) -c source/ui.cpp -o source/ui.o $(CXXFLAGS)
+
+source/usb_dev.o: source/usb_dev.cpp
+	$(CPP) -c source/usb_dev.cpp -o source/usb_dev.o $(CXXFLAGS)
+
+source/amp.o: source/amp.cpp
+	$(CPP) -c source/amp.cpp -o source/amp.o $(CXXFLAGS)

@@ -1,0 +1,9 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+C:/Users/admin/Desktop/fifo_nsyn_test/fifo_nsyn_test.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+C:/Users/admin/Desktop/fifo_nsyn_test/fifo_nsyn_test.srcs/sim_1/new/t_fifo_nsny_readBlock.v,1550226447,verilog,,,,t_fifo_nsny_readBlock,,,,,,,,
+C:/Users/admin/Desktop/fifo_nsyn_test/fifo_nsyn_test.srcs/sim_1/new/t_fifo_nsny_test.v,1550224938,verilog,,,,t_fifo_nsyn_test,,,,,,,,
+C:/Users/admin/Desktop/fifo_nsyn_test/fifo_nsyn_test.srcs/sources_1/ip/Bram/sim/Bram.v,1550210794,verilog,,C:/Users/admin/Desktop/fifo_nsyn_test/fifo_nsyn_test.srcs/sources_1/new/fifo_nsyn_test.v,,Bram,,,,,,,,
+C:/Users/admin/Desktop/fifo_nsyn_test/fifo_nsyn_test.srcs/sources_1/new/fifo_nsyn_test.v,1550464079,verilog,,C:/Users/admin/Desktop/fifo_nsyn_test/fifo_nsyn_test.srcs/sim_1/new/t_fifo_nsny_readBlock.v,,fifo_nsyn_test,,,,,,,,

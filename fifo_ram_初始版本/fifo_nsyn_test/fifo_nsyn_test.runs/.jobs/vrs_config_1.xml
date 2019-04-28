@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="Bram_synth_1" LaunchDir="C:/Users/admin/Desktop/fifo_nsyn_test/fifo_nsyn_test.runs/Bram_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

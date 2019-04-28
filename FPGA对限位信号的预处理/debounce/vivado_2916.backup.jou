@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Mar 15 13:45:55 2019
+# Process ID: 2916
+# Current directory: C:/Users/admin/Desktop/debounce/debounce
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent143820 C:\Users\admin\Desktop\debounce\debounce\debounce.xpr
+# Log file: C:/Users/admin/Desktop/debounce/debounce/vivado.log
+# Journal file: C:/Users/admin/Desktop/debounce/debounce\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/admin/Desktop/debounce/debounce/debounce.xpr
+update_compile_order -fileset sources_1
+close [ open C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/sd_deb.v w ]
+add_files C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/sd_deb.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source top_test.tcl
+run all
+close_sim
+launch_simulation
+source top_test.tcl
+run all
+close_sim
+launch_simulation
+source top_test.tcl
+run all
+close_sim
+launch_simulation
+source top_test.tcl
+run all
+current_wave_config {Untitled 4}
+add_wave {{/top_test/rand_num}} 
+run all
+close_sim
+launch_simulation
+source top_test.tcl
+run all
+close_sim
+launch_simulation
+source top_test.tcl
+run all
+run all
+close_sim

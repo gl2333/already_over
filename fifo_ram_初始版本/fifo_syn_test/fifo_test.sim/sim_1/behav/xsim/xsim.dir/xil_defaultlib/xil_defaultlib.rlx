@@ -1,0 +1,8 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+C:/Users/admin/Desktop/fifo_test/fifo_test.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+C:/Users/admin/Desktop/fifo_test/fifo_test.srcs/sim_1/new/t_fifo_test.v,1550131267,verilog,,,,t_fifo_test,,,,,,,,
+C:/Users/admin/Desktop/fifo_test/fifo_test.srcs/sources_1/ip/Bram/sim/Bram.v,1550123162,verilog,,C:/Users/admin/Desktop/fifo_test/fifo_test.srcs/sources_1/new/fifo_test.v,,Bram,,,,,,,,
+C:/Users/admin/Desktop/fifo_test/fifo_test.srcs/sources_1/new/fifo_test.v,1550127127,verilog,,C:/Users/admin/Desktop/fifo_test/fifo_test.srcs/sim_1/new/t_fifo_test.v,,fifo_test,,,,,,,,

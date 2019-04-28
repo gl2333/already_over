@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"top_test_time_impl.v" \
+"../../../../../debounce.srcs/sim_1/new/top_test.v" \
+
+# Do not sort compile order
+nosort

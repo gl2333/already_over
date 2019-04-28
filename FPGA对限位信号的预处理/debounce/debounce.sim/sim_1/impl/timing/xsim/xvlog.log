@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/debounce/debounce/debounce.sim/sim_1/impl/timing/xsim/top_test_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module holdup_cnt
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sim_1/new/top_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_test
+INFO: [VRFC 10-2458] undeclared symbol usm_limit_deb, assumed default net type wire [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sim_1/new/top_test.v:38]
+INFO: [VRFC 10-2458] undeclared symbol usm_limit_hold, assumed default net type wire [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sim_1/new/top_test.v:39]

@@ -1,0 +1,7 @@
+Running: xsim.dir/t_fifo_nsny_readBlock_behav/xsimk.exe -simmode gui -wdb t_fifo_nsny_readBlock_behav.wdb -simrunnum 0 -socket 59127
+Design successfully loaded
+Design Loading Memory Usage: 5104 KB (Peak: 5104 KB)
+Design Loading CPU Usage: 61 ms
+Simulation completed
+Simulation Memory Usage: 140488 KB (Peak: 140488 KB)
+Simulation CPU Usage: 4468 ms

@@ -1,0 +1,529 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Feb 27 09:52:54 2019
+# Process ID: 70692
+# Current directory: C:/Users/admin/Desktop/debounce/debounce
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent69584 C:\Users\admin\Desktop\debounce\debounce\debounce.xpr
+# Log file: C:/Users/admin/Desktop/debounce/debounce/vivado.log
+# Journal file: C:/Users/admin/Desktop/debounce/debounce\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/admin/Desktop/debounce/debounce/debounce.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 870.316 ; gain = 158.074
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/admin/Desktop/debounce/debounce/debounce.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'deb_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/admin/Desktop/debounce/debounce/debounce.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj deb_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module deb_cnt
+WARNING: [VRFC 10-1315] redeclaration of ansi port cnt is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v:17]
+WARNING: [VRFC 10-1315] redeclaration of ansi port cnt_run is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v:24]
+WARNING: [VRFC 10-1315] redeclaration of ansi port cnt_start is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v:25]
+WARNING: [VRFC 10-1315] redeclaration of ansi port cnt_done is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v:26]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sim_1/new/deb_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module deb_test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/admin/Desktop/debounce/debounce/debounce.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2571681400834b31a8527f68b61e8f81 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot deb_test_behav xil_defaultlib.deb_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v" Line 2. Module deb_cnt(CNT=5) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.deb_cnt(CNT=5)
+Compiling module xil_defaultlib.deb_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot deb_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/admin/Desktop/debounce/debounce/debounce.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "deb_test_behav -key {Behavioral:sim_1:Functional:deb_test} -tclbatch {deb_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source deb_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'deb_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 892.539 ; gain = 22.223
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top top_test [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/admin/Desktop/debounce/debounce/debounce.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/admin/Desktop/debounce/debounce/debounce.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module deb_cnt
+WARNING: [VRFC 10-1315] redeclaration of ansi port cnt is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v:17]
+WARNING: [VRFC 10-1315] redeclaration of ansi port cnt_run is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v:24]
+WARNING: [VRFC 10-1315] redeclaration of ansi port cnt_start is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v:25]
+WARNING: [VRFC 10-1315] redeclaration of ansi port cnt_done is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v:26]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/holdup_cnt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module holdup_cnt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+WARNING: [VRFC 10-1315] redeclaration of ansi port usm_limit_deb is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:16]
+WARNING: [VRFC 10-1315] redeclaration of ansi port usm_limit_hold is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:17]
+WARNING: [VRFC 10-1315] redeclaration of ansi port clk is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:18]
+WARNING: [VRFC 10-1315] redeclaration of ansi port rst is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:19]
+WARNING: [VRFC 10-1315] redeclaration of ansi port USM_LIMIT is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:20]
+WARNING: [VRFC 10-1315] redeclaration of ansi port o_irq_usm_limit_pulse is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:22]
+WARNING: [VRFC 10-1315] redeclaration of ansi port reg_irq_sta_usm_limit is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:37]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sim_1/new/top_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_test
+INFO: [VRFC 10-2458] undeclared symbol reg_irq_sta_usm_limit, assumed default net type wire [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sim_1/new/top_test.v:40]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/admin/Desktop/debounce/debounce/debounce.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2571681400834b31a8527f68b61e8f81 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_test_behav xil_defaultlib.top_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v" Line 2. Module deb_cnt(CNT=5000) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.deb_cnt(CNT=5000)
+Compiling module xil_defaultlib.holdup_cnt(CNT=50000)
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.top_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_test_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/admin/Desktop/debounce/debounce/debounce.sim/sim_1/behav/xsim/xsim.dir/top_test_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/admin/Desktop/debounce/debounce/debounce.sim/sim_1/behav/xsim/xsim.dir/top_test_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Feb 27 10:13:39 2019. For additional details about this file, please refer to the WebTalk help file at D:/Xilinx/Vivado/2018.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 55.840 ; gain = 1.191
+INFO: [Common 17-206] Exiting Webtalk at Wed Feb 27 10:13:39 2019...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 929.734 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/admin/Desktop/debounce/debounce/debounce.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_test_behav -key {Behavioral:sim_1:Functional:top_test} -tclbatch {top_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source top_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 929.734 ; gain = 0.000
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 929.734 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/admin/Desktop/debounce/debounce/debounce.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/admin/Desktop/debounce/debounce/debounce.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module deb_cnt
+WARNING: [VRFC 10-1315] redeclaration of ansi port cnt is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v:17]
+WARNING: [VRFC 10-1315] redeclaration of ansi port cnt_run is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v:24]
+WARNING: [VRFC 10-1315] redeclaration of ansi port cnt_start is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v:25]
+WARNING: [VRFC 10-1315] redeclaration of ansi port cnt_done is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v:26]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/holdup_cnt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module holdup_cnt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+WARNING: [VRFC 10-1315] redeclaration of ansi port usm_limit_deb is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:16]
+WARNING: [VRFC 10-1315] redeclaration of ansi port usm_limit_hold is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:17]
+WARNING: [VRFC 10-1315] redeclaration of ansi port clk is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:18]
+WARNING: [VRFC 10-1315] redeclaration of ansi port rst is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:19]
+WARNING: [VRFC 10-1315] redeclaration of ansi port USM_LIMIT is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:20]
+WARNING: [VRFC 10-1315] redeclaration of ansi port o_irq_usm_limit_pulse is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:22]
+WARNING: [VRFC 10-1315] redeclaration of ansi port reg_irq_sta_usm_limit is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:37]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sim_1/new/top_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/admin/Desktop/debounce/debounce/debounce.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2571681400834b31a8527f68b61e8f81 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_test_behav xil_defaultlib.top_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v" Line 2. Module deb_cnt(CNT=5000) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.deb_cnt(CNT=5000)
+Compiling module xil_defaultlib.holdup_cnt(CNT=50000)
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.top_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/admin/Desktop/debounce/debounce/debounce.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_test_behav -key {Behavioral:sim_1:Functional:top_test} -tclbatch {top_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source top_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 929.734 ; gain = 0.000
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/admin/Desktop/debounce/debounce/debounce.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/admin/Desktop/debounce/debounce/debounce.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module deb_cnt
+WARNING: [VRFC 10-1315] redeclaration of ansi port cnt is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v:17]
+WARNING: [VRFC 10-1315] redeclaration of ansi port cnt_run is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v:24]
+WARNING: [VRFC 10-1315] redeclaration of ansi port cnt_start is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v:25]
+WARNING: [VRFC 10-1315] redeclaration of ansi port cnt_done is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v:26]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/holdup_cnt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module holdup_cnt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+WARNING: [VRFC 10-1315] redeclaration of ansi port usm_limit_deb is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:16]
+WARNING: [VRFC 10-1315] redeclaration of ansi port usm_limit_hold is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:17]
+WARNING: [VRFC 10-1315] redeclaration of ansi port clk is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:18]
+WARNING: [VRFC 10-1315] redeclaration of ansi port rst is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:19]
+WARNING: [VRFC 10-1315] redeclaration of ansi port USM_LIMIT is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:20]
+WARNING: [VRFC 10-1315] redeclaration of ansi port o_irq_usm_limit_pulse is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:22]
+WARNING: [VRFC 10-1315] redeclaration of ansi port reg_irq_sta_usm_limit is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:41]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sim_1/new/top_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/admin/Desktop/debounce/debounce/debounce.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2571681400834b31a8527f68b61e8f81 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_test_behav xil_defaultlib.top_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v" Line 2. Module deb_cnt(CNT=5000) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.deb_cnt(CNT=5000)
+Compiling module xil_defaultlib.holdup_cnt(CNT=50000)
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.top_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/admin/Desktop/debounce/debounce/debounce.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_test_behav -key {Behavioral:sim_1:Functional:top_test} -tclbatch {top_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source top_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 929.734 ; gain = 0.000
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/admin/Desktop/debounce/debounce/debounce.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/admin/Desktop/debounce/debounce/debounce.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module deb_cnt
+WARNING: [VRFC 10-1315] redeclaration of ansi port cnt is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v:17]
+WARNING: [VRFC 10-1315] redeclaration of ansi port cnt_run is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v:24]
+WARNING: [VRFC 10-1315] redeclaration of ansi port cnt_start is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v:25]
+WARNING: [VRFC 10-1315] redeclaration of ansi port cnt_done is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v:26]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/holdup_cnt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module holdup_cnt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+WARNING: [VRFC 10-1315] redeclaration of ansi port usm_limit_deb is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:16]
+WARNING: [VRFC 10-1315] redeclaration of ansi port usm_limit_hold is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:17]
+WARNING: [VRFC 10-1315] redeclaration of ansi port clk is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:18]
+WARNING: [VRFC 10-1315] redeclaration of ansi port rst is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:19]
+WARNING: [VRFC 10-1315] redeclaration of ansi port USM_LIMIT is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:20]
+WARNING: [VRFC 10-1315] redeclaration of ansi port o_irq_usm_limit_pulse is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:22]
+WARNING: [VRFC 10-1315] redeclaration of ansi port reg_irq_sta_usm_limit is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:41]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sim_1/new/top_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/admin/Desktop/debounce/debounce/debounce.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2571681400834b31a8527f68b61e8f81 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_test_behav xil_defaultlib.top_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v" Line 2. Module deb_cnt(CNT=5000) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.deb_cnt(CNT=5000)
+Compiling module xil_defaultlib.holdup_cnt(CNT=50000)
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.top_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/admin/Desktop/debounce/debounce/debounce.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_test_behav -key {Behavioral:sim_1:Functional:top_test} -tclbatch {top_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source top_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 932.859 ; gain = 1.512
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/admin/Desktop/debounce/debounce/debounce.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/admin/Desktop/debounce/debounce/debounce.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module deb_cnt
+WARNING: [VRFC 10-1315] redeclaration of ansi port cnt is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v:17]
+WARNING: [VRFC 10-1315] redeclaration of ansi port cnt_run is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v:24]
+WARNING: [VRFC 10-1315] redeclaration of ansi port cnt_start is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v:25]
+WARNING: [VRFC 10-1315] redeclaration of ansi port cnt_done is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v:26]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/holdup_cnt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module holdup_cnt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+WARNING: [VRFC 10-1315] redeclaration of ansi port usm_limit_deb is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:16]
+WARNING: [VRFC 10-1315] redeclaration of ansi port usm_limit_hold is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:17]
+WARNING: [VRFC 10-1315] redeclaration of ansi port clk is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:18]
+WARNING: [VRFC 10-1315] redeclaration of ansi port rst is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:19]
+WARNING: [VRFC 10-1315] redeclaration of ansi port USM_LIMIT is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:20]
+WARNING: [VRFC 10-1315] redeclaration of ansi port o_irq_usm_limit_pulse is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:22]
+WARNING: [VRFC 10-1315] redeclaration of ansi port reg_irq_sta_usm_limit is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:41]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sim_1/new/top_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/admin/Desktop/debounce/debounce/debounce.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2571681400834b31a8527f68b61e8f81 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_test_behav xil_defaultlib.top_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v" Line 2. Module deb_cnt(CNT=5000) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.deb_cnt(CNT=5000)
+Compiling module xil_defaultlib.holdup_cnt(CNT=50000)
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.top_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/admin/Desktop/debounce/debounce/debounce.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_test_behav -key {Behavioral:sim_1:Functional:top_test} -tclbatch {top_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source top_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 934.277 ; gain = 0.000
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/admin/Desktop/debounce/debounce/debounce.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/admin/Desktop/debounce/debounce/debounce.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module deb_cnt
+WARNING: [VRFC 10-1315] redeclaration of ansi port cnt is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v:17]
+WARNING: [VRFC 10-1315] redeclaration of ansi port cnt_run is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v:24]
+WARNING: [VRFC 10-1315] redeclaration of ansi port cnt_start is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v:25]
+WARNING: [VRFC 10-1315] redeclaration of ansi port cnt_done is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v:26]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/holdup_cnt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module holdup_cnt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+WARNING: [VRFC 10-1315] redeclaration of ansi port usm_limit_deb is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:16]
+WARNING: [VRFC 10-1315] redeclaration of ansi port usm_limit_hold is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:17]
+WARNING: [VRFC 10-1315] redeclaration of ansi port clk is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:18]
+WARNING: [VRFC 10-1315] redeclaration of ansi port rst is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:19]
+WARNING: [VRFC 10-1315] redeclaration of ansi port USM_LIMIT is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:20]
+WARNING: [VRFC 10-1315] redeclaration of ansi port o_irq_usm_limit_pulse is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:22]
+WARNING: [VRFC 10-1315] redeclaration of ansi port reg_irq_sta_usm_limit is not allowed [C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/top.v:41]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sim_1/new/top_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/admin/Desktop/debounce/debounce/debounce.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2571681400834b31a8527f68b61e8f81 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_test_behav xil_defaultlib.top_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/debounce/debounce/debounce.srcs/sources_1/new/deb_cnt.v" Line 2. Module deb_cnt(CNT=5000) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.deb_cnt(CNT=5000)
+Compiling module xil_defaultlib.holdup_cnt(CNT=50000)
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.top_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/admin/Desktop/debounce/debounce/debounce.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_test_behav -key {Behavioral:sim_1:Functional:top_test} -tclbatch {top_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source top_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 936.836 ; gain = 0.000
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 27 11:31:17 2019...
