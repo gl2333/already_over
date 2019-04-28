@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Mar 28 13:20:14 2019
+# Process ID: 31548
+# Current directory: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30868 C:\Users\admin\Desktop\SDHW-CCU-FPGA-ZYNQ-I\SD_DA512_ZYNQ_FPGA.xpr
+# Log file: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/vivado.log
+# Journal file: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ipdefs/AXI4_DEV_0_0_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 963.406 ; gain = 235.828
+update_compile_order -fileset sources_1
+ipx::edit_ip_in_project -upgrade true -name AXI4_DEV_v1_0_project -directory C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.tmp/AXI4_DEV_v1_0_project c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ipdefs/AXI4_DEV_0_0_0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/admin/desktop/sdhw-ccu-fpga-zynq-i/sd_da512_zynq_fpga.tmp/axi4_dev_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ipdefs/AXI4_DEV_0_0_0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1025.809 ; gain = 50.145
+update_compile_order -fileset sources_1
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 28 13:39:34 2019...
