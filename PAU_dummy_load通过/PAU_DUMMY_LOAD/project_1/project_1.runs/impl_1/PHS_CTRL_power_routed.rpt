@@ -1,0 +1,563 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date             : Wed Jul 04 17:51:37 2018
+| Host             : Ykersatomi-PC running 64-bit Service Pack 1  (build 7601)
+| Command          : report_power -file PHS_CTRL_power_routed.rpt -pb PHS_CTRL_power_summary_routed.pb -rpx PHS_CTRL_power_routed.rpx
+| Design           : PHS_CTRL
+| Device           : xc7a100tftg256-3
+| Design State     : routed
+| Grade            : extended
+| Process          : typical
+| Characterization : Production
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+-------+
+| Total On-Chip Power (W)  | 0.357 |
+| Dynamic (W)              | 0.259 |
+| Device Static (W)        | 0.098 |
+| Effective TJA (C/W)      | 4.6   |
+| Max Ambient (C)          | 98.4  |
+| Junction Temperature (C) | 26.6  |
+| Confidence Level         | Low   |
+| Setting File             | ---   |
+| Simulation Activity File | ---   |
+| Design Nets Matched      | NA    |
++--------------------------+-------+
+
+
+1.1 On-Chip Components
+----------------------
+
++-------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
++-------------------------+-----------+----------+-----------+-----------------+
+| Clocks                  |     0.052 |        5 |       --- |             --- |
+| Slice Logic             |     0.054 |    62903 |       --- |             --- |
+|   LUT as Logic          |     0.052 |    33406 |     63400 |           52.69 |
+|   Register              |     0.001 |    20914 |    126800 |           16.49 |
+|   CARRY4                |    <0.001 |     1269 |     15850 |            8.01 |
+|   F7/F8 Muxes           |    <0.001 |     1268 |     63400 |            2.00 |
+|   LUT as Shift Register |    <0.001 |      203 |     19000 |            1.07 |
+|   Others                |     0.000 |      817 |       --- |             --- |
+|   BUFG                  |     0.000 |        1 |        32 |            3.13 |
+| Signals                 |     0.046 |    44590 |       --- |             --- |
+| MMCM                    |     0.108 |        1 |         6 |           16.67 |
+| I/O                     |    <0.001 |       12 |       170 |            7.06 |
+| Static Power            |     0.098 |          |           |                 |
+| Total                   |     0.357 |          |           |                 |
++-------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     0.168 |       0.152 |      0.016 |
+| Vccaux    |       1.800 |     0.078 |       0.060 |      0.018 |
+| Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                           |                                                                                                            |
+|                             |            |                                                        |                                                                                                            |
+| Overall confidence level    | Low        |                                                        |                                                                                                            |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 4.6                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 4.6                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++--------------------+---------------------------------+-----------------+
+| Clock              | Domain                          | Constraint (ns) |
++--------------------+---------------------------------+-----------------+
+| clk_clk_gen_1      | u_clk_gen/inst/clk_clk_gen      |            20.0 |
+| clkfbout_clk_gen_1 | u_clk_gen/inst/clkfbout_clk_gen |            40.0 |
+| sys_freq           | CLK_IN                          |            40.0 |
++--------------------+---------------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++----------------------------------+-----------+
+| Name                             | Power (W) |
++----------------------------------+-----------+
+| PHS_CTRL                         |     0.259 |
+|   amp_ctrl_inst[0].u_amp_ctrl    |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[10].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[11].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[12].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[13].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[14].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[15].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[16].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[17].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[18].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[19].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[1].u_amp_ctrl    |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[20].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[21].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[22].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[23].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[24].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[25].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[26].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[27].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[28].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[29].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[2].u_amp_ctrl    |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[30].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[31].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[32].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[33].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[34].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[35].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[36].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[37].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[38].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[39].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[3].u_amp_ctrl    |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[40].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[41].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[42].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[43].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[44].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[45].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[46].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[47].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[48].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[49].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[4].u_amp_ctrl    |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[50].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[51].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[52].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[53].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[54].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[55].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[56].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[57].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[58].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[59].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[5].u_amp_ctrl    |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[60].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[61].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[62].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[63].u_amp_ctrl   |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[6].u_amp_ctrl    |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[7].u_amp_ctrl    |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[8].u_amp_ctrl    |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   amp_ctrl_inst[9].u_amp_ctrl    |     0.001 |
+|     u_i2cm                       |    <0.001 |
+|   dummy_inst[0].R_i2cSlaveInst   |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[0].VI_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[10].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[10].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[11].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[11].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[12].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[12].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[13].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[13].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[14].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[14].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[15].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[15].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[16].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[16].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[17].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[17].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[18].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[18].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[19].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[19].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[1].R_i2cSlaveInst   |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[1].VI_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[20].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[20].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[21].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[21].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[22].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[22].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[23].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[23].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[24].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[24].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[25].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[25].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[26].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[26].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[27].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[27].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[28].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[28].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[29].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[29].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[2].R_i2cSlaveInst   |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[2].VI_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[30].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[30].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[31].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[31].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[32].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[32].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[33].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[33].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[34].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[34].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[35].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[35].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[36].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[36].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[37].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[37].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[38].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[38].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[39].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[39].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[3].R_i2cSlaveInst   |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[3].VI_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[40].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[40].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[41].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[41].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[42].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[42].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[43].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[43].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[44].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[44].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[45].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[45].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[46].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[46].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[47].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[47].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[48].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[48].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[49].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[49].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[4].R_i2cSlaveInst   |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[4].VI_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[50].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[50].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[51].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[51].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[52].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[52].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[53].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[53].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[54].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[54].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[55].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[55].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[56].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[56].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[57].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[57].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[58].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[58].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[59].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[59].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[5].R_i2cSlaveInst   |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[5].VI_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[60].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[60].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[61].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[61].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[62].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[62].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[63].R_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[63].VI_i2cSlaveInst |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[6].R_i2cSlaveInst   |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[6].VI_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[7].R_i2cSlaveInst   |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[7].VI_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[8].R_i2cSlaveInst   |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[8].VI_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[9].R_i2cSlaveInst   |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   dummy_inst[9].VI_i2cSlaveInst  |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   i2cSlaveInst                   |     0.002 |
+|     u_serialInterface            |     0.002 |
+|   inlet0_i2cSlaveInst            |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   inlet1_i2cSlaveInst            |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   iobuf_sclSlave                 |     0.000 |
+|   iobuf_sclSlave_Pfpga           |     0.000 |
+|   iobuf_sdaSlave                 |     0.000 |
+|   iobuf_sdaSlave_Pfpga           |     0.000 |
+|   outlet0_i2cSlaveInst           |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   outlet1_i2cSlaveInst           |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   outlet2_i2cSlaveInst           |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   outlet3_i2cSlaveInst           |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   u_clk_gen                      |     0.108 |
+|     inst                         |     0.108 |
+|   u_dna                          |    <0.001 |
+|   u_fan_temp                     |    <0.001 |
+|     in_temp                      |    <0.001 |
+|       i2cm                       |    <0.001 |
+|     out_temp                     |    <0.001 |
+|       i2cm                       |    <0.001 |
+|   u_i2c_slave                    |    <0.001 |
+|     u_serialInterface            |    <0.001 |
+|   u_sync_switch                  |    <0.001 |
+|   u_sync_trig                    |    <0.001 |
++----------------------------------+-----------+
+
+

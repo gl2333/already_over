@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../PHS_CTRL_DUMMY.srcs/sources_1/new" --include "../../../../PHS_CTRL_DUMMY.srcs/sources_1/ip/clk_gen" \
+"../../../../PHS_CTRL_DUMMY.srcs/sources_1/ip/clk_gen/clk_gen_clk_wiz.v" \
+"../../../../PHS_CTRL_DUMMY.srcs/sources_1/ip/clk_gen/clk_gen.v" \
+"../../../../PHS_CTRL_DUMMY.srcs/sources_1/new/amp_ctrl.v" \
+"../../../../PHS_CTRL_DUMMY.srcs/sources_1/new/fan_ctrl.v" \
+"../../../../PHS_CTRL_DUMMY.srcs/sources_1/new/fan_temp.v" \
+"../../../../PHS_CTRL_DUMMY.srcs/sources_1/new/i2cMaster.v" \
+"../../../../PHS_CTRL_DUMMY.srcs/sources_1/new/i2cSlave.v" \
+"../../../../PHS_CTRL_DUMMY.srcs/sources_1/new/i2c_read_loop.v" \
+"../../../../PHS_CTRL_DUMMY.srcs/sources_1/new/phs.v" \
+"../../../../PHS_CTRL_DUMMY.srcs/sources_1/new/phs_gen.v" \
+"../../../../PHS_CTRL_DUMMY.srcs/sources_1/new/serialInterface.v" \
+"../../../../PHS_CTRL_DUMMY.srcs/sources_1/new/sync.v" \
+"../../../../PHS_CTRL_DUMMY.srcs/sources_1/new/PHS_CRTL.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

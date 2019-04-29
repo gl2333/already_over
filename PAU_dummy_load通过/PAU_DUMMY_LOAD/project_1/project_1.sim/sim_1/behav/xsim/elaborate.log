@@ -1,0 +1,30 @@
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 818ea993bb104567a3ceb123fd619b82 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 64 differs from formal bit length 1 for port s_wrEn_amp_R [C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/tb.v:184]
+WARNING: [VRFC 10-278] actual bit length 64 differs from formal bit length 1 for port s_rdEn_amp_VI [C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/tb.v:185]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port scl_in [C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/PHS_CRTL.v:757]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.i2cm(I2C_ST_ACK_ERR_EN=0,I2C_RD_...
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=21.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_gen_clk_wiz
+Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.serialInterface(I2C_ADDRESS=55,I...
+Compiling module xil_defaultlib.i2cSlave(I2C_ADDRESS=55,I2C_ADDR...
+Compiling module xil_defaultlib.i2cMaster(SYS_FREQ=50000000,I2C_...
+Compiling module xil_defaultlib.amp_ctrl
+Compiling module xil_defaultlib.serialInterface(I2C_ADDRESS=7'b0...
+Compiling module xil_defaultlib.i2cSlave(I2C_ADDRESS=7'b0101000)
+Compiling module xil_defaultlib.serialInterface(I2C_ADDRESS=7'b0...
+Compiling module xil_defaultlib.i2cSlave(I2C_ADDRESS=7'b011000)
+Compiling module xil_defaultlib.PHS_CTRL_default
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav

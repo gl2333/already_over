@@ -1,0 +1,17 @@
+#include "main.hpp"
+
+int main(int argc, char** argv) {
+	
+	printf("\n");
+	printf("************************************************************\n");	
+	printf("******************       Start Test       ******************\n");
+	printf("************************************************************\n");
+	printf("\n");
+	
+	USB_DEV_INIT();
+	USB_DEV_CONFIG_I2C();
+
+	ShowUI();
+	
+	return 0;
+}

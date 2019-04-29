@@ -1,0 +1,23 @@
+测试内容如下：	
+1、Read Inlet Air Tempreature
+2、Read Outlet Air Temperature
+3、Read Fan Speed
+4、Read Power switch
+5、Write Resistor
+6、Read Resistor
+7、Read voltage
+8、Read current
+		
+9、WR_RD Phase
+10、RD Phase
+11、Trigger
+
+说明：
+1、功能1-8属于压控板测试内容
+2、功能9-11属于相控板测试内容
+
+
+5、功能9集合了写+读+trigger功能
+6、功能10只有读功能
+
+7、如果控制板和相位板同时测试，需要两个use-i2c适配器时，Wr_CTRL_FPGA函数中VII_WriteBytes函数的第三个参数设备索引号0要改为1；Rd_CTRL_FPGA函数中VII_ReadBytes函数中第三个参数设备索引号0要改为1；

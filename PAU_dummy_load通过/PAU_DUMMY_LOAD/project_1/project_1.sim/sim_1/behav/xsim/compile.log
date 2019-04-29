@@ -1,0 +1,46 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/ip/clk_gen/clk_gen_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/ip/clk_gen/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/PHS_CRTL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PHS_CTRL
+INFO: [VRFC 10-2458] undeclared symbol rst_tmp, assumed default net type wire [C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/PHS_CRTL.v:110]
+WARNING: [VRFC 10-1315] redeclaration of ansi port reg_amp_rv is not allowed [C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/PHS_CRTL.v:375]
+WARNING: [VRFC 10-1315] redeclaration of ansi port reg_amp_vv is not allowed [C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/PHS_CRTL.v:376]
+INFO: [VRFC 10-2458] undeclared symbol reg_cf_gen_vf, assumed default net type wire [C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/PHS_CRTL.v:391]
+INFO: [VRFC 10-2458] undeclared symbol reg_cf_gen_sn, assumed default net type wire [C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/PHS_CRTL.v:392]
+INFO: [VRFC 10-2458] undeclared symbol reg_cf_gen_id, assumed default net type wire [C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/PHS_CRTL.v:393]
+INFO: [VRFC 10-2458] undeclared symbol reg_cf_gen_fm, assumed default net type wire [C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/PHS_CRTL.v:394]
+WARNING: [VRFC 10-1315] redeclaration of ansi port amp_scl_out is not allowed [C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/PHS_CRTL.v:670]
+WARNING: [VRFC 10-1315] redeclaration of ansi port amp_sda_in is not allowed [C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/PHS_CRTL.v:671]
+WARNING: [VRFC 10-1315] redeclaration of ansi port amp_sda_in_R_tmp is not allowed [C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/PHS_CRTL.v:672]
+WARNING: [VRFC 10-1315] redeclaration of ansi port amp_sda_in_VI_tmp is not allowed [C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/PHS_CRTL.v:673]
+WARNING: [VRFC 10-1315] redeclaration of ansi port amp_sda_out is not allowed [C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/PHS_CRTL.v:674]
+WARNING: [VRFC 10-1315] redeclaration of ansi port reg_amp_r is not allowed [C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/PHS_CRTL.v:700]
+WARNING: [VRFC 10-1315] redeclaration of ansi port s_CurrState_SISt_VI is not allowed [C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/PHS_CRTL.v:710]
+WARNING: [VRFC 10-1315] redeclaration of ansi port s_CurrState_SISt_R is not allowed [C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/PHS_CRTL.v:711]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/amp_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module amp_ctrl
+INFO: [VRFC 10-2458] undeclared symbol beat, assumed default net type wire [C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/amp_ctrl.v:134]
+INFO: [VRFC 10-2458] undeclared symbol power_up_delay, assumed default net type wire [C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/amp_ctrl.v:135]
+INFO: [VRFC 10-2458] undeclared symbol wr_r_setup, assumed default net type wire [C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/amp_ctrl.v:136]
+INFO: [VRFC 10-2458] undeclared symbol wr_r_hold, assumed default net type wire [C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/amp_ctrl.v:137]
+INFO: [VRFC 10-2458] undeclared symbol error_sleep, assumed default net type wire [C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/amp_ctrl.v:138]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/i2cMaster.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i2cMaster
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/i2cSlave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i2cSlave
+WARNING: [VRFC 10-756] identifier I2C_ADDR_BYTE_WIDTH is used before its declaration [C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/i2cSlave.v:9]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/i2cm_ZuiXinDe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i2cm
+WARNING: [VRFC 10-1315] redeclaration of ansi port s_sda_o is not allowed [C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/i2cm_ZuiXinDe.v:87]
+WARNING: [VRFC 10-1315] redeclaration of ansi port s_sda_i_source is not allowed [C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/i2cm_ZuiXinDe.v:93]
+WARNING: [VRFC 10-756] identifier I2C_WR_BYTE_WIDTH is used before its declaration [C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/i2cm_ZuiXinDe.v:19]
+WARNING: [VRFC 10-756] identifier I2C_WR_BUF_WIDTH is used before its declaration [C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/i2cm_ZuiXinDe.v:20]
+WARNING: [VRFC 10-756] identifier I2C_RD_BYTE_WIDTH is used before its declaration [C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/i2cm_ZuiXinDe.v:21]
+WARNING: [VRFC 10-756] identifier I2C_RD_BUF_WIDTH is used before its declaration [C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/i2cm_ZuiXinDe.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/serialInterface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serialInterface
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/tb.v" into library xil_defaultlib
+WARNING: [VRFC 10-998] macro CHN redefined [C:/Users/admin/Desktop/FPGA_CODE/PHS_CTRL_DUMMY/PHS_CTRL_DUMMY.srcs/sources_1/new/tb.v:2]
+INFO: [VRFC 10-311] analyzing module tb

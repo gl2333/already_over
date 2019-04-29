@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Jul 04 17:41:36 2018
+# Process ID: 6188
+# Current directory: E:/Users/Ykersatomi/Desktop/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log PHS_CTRL.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PHS_CTRL.tcl
+# Log file: E:/Users/Ykersatomi/Desktop/project_1/project_1.runs/synth_1/PHS_CTRL.vds
+# Journal file: E:/Users/Ykersatomi/Desktop/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source PHS_CTRL.tcl -notrace
