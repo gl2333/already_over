@@ -1,0 +1,11 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SERIALX1
+Size               4M
+Start Address      0x00000000
+End Address        0x003FFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x003A607B    Sep 12 11:05:45 2018    D:/4_WORK/1_svn/FPGA/SDHW-PAU-FPGA-CTRL-I/CTRL.runs/impl_1/CTRL_FPGA.bit

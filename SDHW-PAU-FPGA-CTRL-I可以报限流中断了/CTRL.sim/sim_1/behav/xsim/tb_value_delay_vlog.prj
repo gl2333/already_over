@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../src" \
+"../../../../CTRL.srcs/sources_1/new/value_delay.v" \
+"../../../../CTRL.srcs/sources_1/new/tb_value_delay.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../src" \
+"../../../../src/i2cMaster.v" \
+"../../../../src/amp_ctrl.v" \
+"../../../../src/tb_amp_ctrl.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

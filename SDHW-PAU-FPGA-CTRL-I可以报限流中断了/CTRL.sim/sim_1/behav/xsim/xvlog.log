@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/SDHW-PAU-FPGA-CTRL-I/CTRL.srcs/sources_1/new/value_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module value_delay
+WARNING: [VRFC 10-1315] redeclaration of ansi port irq_valid is not allowed [C:/Users/admin/Desktop/SDHW-PAU-FPGA-CTRL-I/CTRL.srcs/sources_1/new/value_delay.v:22]
+WARNING: [VRFC 10-1315] redeclaration of ansi port reg_value_limit is not allowed [C:/Users/admin/Desktop/SDHW-PAU-FPGA-CTRL-I/CTRL.srcs/sources_1/new/value_delay.v:23]
+WARNING: [VRFC 10-1315] redeclaration of ansi port o is not allowed [C:/Users/admin/Desktop/SDHW-PAU-FPGA-CTRL-I/CTRL.srcs/sources_1/new/value_delay.v:24]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/SDHW-PAU-FPGA-CTRL-I/CTRL.srcs/sources_1/new/tb_value_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_value_delay

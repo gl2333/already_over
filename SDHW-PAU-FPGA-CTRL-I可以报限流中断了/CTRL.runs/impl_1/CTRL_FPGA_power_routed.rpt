@@ -1,0 +1,680 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date             : Thu Apr 25 14:54:36 2019
+| Host             : SDHW-GL running 64-bit major release  (build 9200)
+| Command          : report_power -file CTRL_FPGA_power_routed.rpt -pb CTRL_FPGA_power_summary_routed.pb -rpx CTRL_FPGA_power_routed.rpx
+| Design           : CTRL_FPGA
+| Device           : xc7a100tftg256-3
+| Design State     : routed
+| Grade            : extended
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 0.125        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 0.028        |
+| Device Static (W)        | 0.097        |
+| Effective TJA (C/W)      | 4.6          |
+| Max Ambient (C)          | 99.4         |
+| Junction Temperature (C) | 25.6         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++-------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
++-------------------------+-----------+----------+-----------+-----------------+
+| Clocks                  |     0.021 |        3 |       --- |             --- |
+| Slice Logic             |     0.003 |    48752 |       --- |             --- |
+|   LUT as Logic          |     0.003 |    21974 |     63400 |           34.66 |
+|   CARRY4                |    <0.001 |     1656 |     15850 |           10.45 |
+|   Register              |    <0.001 |    18254 |    126800 |           14.40 |
+|   F7/F8 Muxes           |    <0.001 |      377 |     63400 |            0.59 |
+|   LUT as Shift Register |    <0.001 |       69 |     19000 |            0.36 |
+|   Others                |     0.000 |      537 |       --- |             --- |
+| Signals                 |     0.004 |    37782 |       --- |             --- |
+| I/O                     |    <0.001 |      149 |       170 |           87.65 |
+| Static Power            |     0.097 |          |           |                 |
+| Total                   |     0.125 |          |           |                 |
++-------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     0.043 |       0.028 |      0.015 |
+| Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |
+| Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                           |                                                                                                            |
+|                             |            |                                                        |                                                                                                            |
+| Overall confidence level    | Low        |                                                        |                                                                                                            |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 4.6                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 4.6                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++----------+--------+-----------------+
+| Clock    | Domain | Constraint (ns) |
++----------+--------+-----------------+
+| sys_freq | CLK_IN |            40.0 |
++----------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++-------------------------------------------+-----------+
+| Name                                      | Power (W) |
++-------------------------------------------+-----------+
+| CTRL_FPGA                                 |     0.028 |
+|   amp_ctrl_inst[0].amp_scl                |     0.000 |
+|   amp_ctrl_inst[0].amp_sda                |     0.000 |
+|   amp_ctrl_inst[0].sdip_reg_amp_av_delay  |    <0.001 |
+|   amp_ctrl_inst[0].sdip_reg_amp_vv_delay  |    <0.001 |
+|   amp_ctrl_inst[0].u_amp_ctrl             |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[0].u_sync_amp_scl         |    <0.001 |
+|   amp_ctrl_inst[0].u_sync_amp_sda         |    <0.001 |
+|   amp_ctrl_inst[10].amp_scl               |     0.000 |
+|   amp_ctrl_inst[10].amp_sda               |     0.000 |
+|   amp_ctrl_inst[10].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[10].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[10].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[10].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[10].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[11].amp_scl               |     0.000 |
+|   amp_ctrl_inst[11].amp_sda               |     0.000 |
+|   amp_ctrl_inst[11].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[11].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[11].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[11].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[11].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[12].amp_scl               |     0.000 |
+|   amp_ctrl_inst[12].amp_sda               |     0.000 |
+|   amp_ctrl_inst[12].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[12].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[12].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[12].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[12].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[13].amp_scl               |     0.000 |
+|   amp_ctrl_inst[13].amp_sda               |     0.000 |
+|   amp_ctrl_inst[13].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[13].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[13].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[13].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[13].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[14].amp_scl               |     0.000 |
+|   amp_ctrl_inst[14].amp_sda               |     0.000 |
+|   amp_ctrl_inst[14].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[14].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[14].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[14].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[14].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[15].amp_scl               |     0.000 |
+|   amp_ctrl_inst[15].amp_sda               |     0.000 |
+|   amp_ctrl_inst[15].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[15].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[15].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[15].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[15].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[16].amp_scl               |     0.000 |
+|   amp_ctrl_inst[16].amp_sda               |     0.000 |
+|   amp_ctrl_inst[16].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[16].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[16].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[16].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[16].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[17].amp_scl               |     0.000 |
+|   amp_ctrl_inst[17].amp_sda               |     0.000 |
+|   amp_ctrl_inst[17].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[17].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[17].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[17].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[17].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[18].amp_scl               |     0.000 |
+|   amp_ctrl_inst[18].amp_sda               |     0.000 |
+|   amp_ctrl_inst[18].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[18].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[18].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[18].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[18].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[19].amp_scl               |     0.000 |
+|   amp_ctrl_inst[19].amp_sda               |     0.000 |
+|   amp_ctrl_inst[19].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[19].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[19].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[19].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[19].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[1].amp_scl                |     0.000 |
+|   amp_ctrl_inst[1].amp_sda                |     0.000 |
+|   amp_ctrl_inst[1].sdip_reg_amp_av_delay  |    <0.001 |
+|   amp_ctrl_inst[1].sdip_reg_amp_vv_delay  |    <0.001 |
+|   amp_ctrl_inst[1].u_amp_ctrl             |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[1].u_sync_amp_scl         |    <0.001 |
+|   amp_ctrl_inst[1].u_sync_amp_sda         |    <0.001 |
+|   amp_ctrl_inst[20].amp_scl               |     0.000 |
+|   amp_ctrl_inst[20].amp_sda               |     0.000 |
+|   amp_ctrl_inst[20].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[20].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[20].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[20].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[20].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[21].amp_scl               |     0.000 |
+|   amp_ctrl_inst[21].amp_sda               |     0.000 |
+|   amp_ctrl_inst[21].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[21].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[21].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[21].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[21].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[22].amp_scl               |     0.000 |
+|   amp_ctrl_inst[22].amp_sda               |     0.000 |
+|   amp_ctrl_inst[22].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[22].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[22].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[22].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[22].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[23].amp_scl               |     0.000 |
+|   amp_ctrl_inst[23].amp_sda               |     0.000 |
+|   amp_ctrl_inst[23].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[23].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[23].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[23].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[23].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[24].amp_scl               |     0.000 |
+|   amp_ctrl_inst[24].amp_sda               |     0.000 |
+|   amp_ctrl_inst[24].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[24].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[24].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[24].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[24].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[25].amp_scl               |     0.000 |
+|   amp_ctrl_inst[25].amp_sda               |     0.000 |
+|   amp_ctrl_inst[25].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[25].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[25].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[25].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[25].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[26].amp_scl               |     0.000 |
+|   amp_ctrl_inst[26].amp_sda               |     0.000 |
+|   amp_ctrl_inst[26].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[26].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[26].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[26].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[26].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[27].amp_scl               |     0.000 |
+|   amp_ctrl_inst[27].amp_sda               |     0.000 |
+|   amp_ctrl_inst[27].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[27].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[27].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[27].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[27].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[28].amp_scl               |     0.000 |
+|   amp_ctrl_inst[28].amp_sda               |     0.000 |
+|   amp_ctrl_inst[28].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[28].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[28].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[28].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[28].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[29].amp_scl               |     0.000 |
+|   amp_ctrl_inst[29].amp_sda               |     0.000 |
+|   amp_ctrl_inst[29].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[29].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[29].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[29].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[29].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[2].amp_scl                |     0.000 |
+|   amp_ctrl_inst[2].amp_sda                |     0.000 |
+|   amp_ctrl_inst[2].sdip_reg_amp_av_delay  |    <0.001 |
+|   amp_ctrl_inst[2].sdip_reg_amp_vv_delay  |    <0.001 |
+|   amp_ctrl_inst[2].u_amp_ctrl             |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[2].u_sync_amp_scl         |    <0.001 |
+|   amp_ctrl_inst[2].u_sync_amp_sda         |    <0.001 |
+|   amp_ctrl_inst[30].amp_scl               |     0.000 |
+|   amp_ctrl_inst[30].amp_sda               |     0.000 |
+|   amp_ctrl_inst[30].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[30].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[30].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[30].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[30].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[31].amp_scl               |     0.000 |
+|   amp_ctrl_inst[31].amp_sda               |     0.000 |
+|   amp_ctrl_inst[31].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[31].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[31].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[31].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[31].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[32].amp_scl               |     0.000 |
+|   amp_ctrl_inst[32].amp_sda               |     0.000 |
+|   amp_ctrl_inst[32].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[32].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[32].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[32].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[32].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[33].amp_scl               |     0.000 |
+|   amp_ctrl_inst[33].amp_sda               |     0.000 |
+|   amp_ctrl_inst[33].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[33].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[33].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[33].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[33].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[34].amp_scl               |     0.000 |
+|   amp_ctrl_inst[34].amp_sda               |     0.000 |
+|   amp_ctrl_inst[34].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[34].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[34].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[34].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[34].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[35].amp_scl               |     0.000 |
+|   amp_ctrl_inst[35].amp_sda               |     0.000 |
+|   amp_ctrl_inst[35].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[35].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[35].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[35].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[35].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[36].amp_scl               |     0.000 |
+|   amp_ctrl_inst[36].amp_sda               |     0.000 |
+|   amp_ctrl_inst[36].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[36].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[36].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[36].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[36].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[37].amp_scl               |     0.000 |
+|   amp_ctrl_inst[37].amp_sda               |     0.000 |
+|   amp_ctrl_inst[37].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[37].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[37].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[37].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[37].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[38].amp_scl               |     0.000 |
+|   amp_ctrl_inst[38].amp_sda               |     0.000 |
+|   amp_ctrl_inst[38].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[38].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[38].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[38].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[38].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[39].amp_scl               |     0.000 |
+|   amp_ctrl_inst[39].amp_sda               |     0.000 |
+|   amp_ctrl_inst[39].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[39].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[39].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[39].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[39].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[3].amp_scl                |     0.000 |
+|   amp_ctrl_inst[3].amp_sda                |     0.000 |
+|   amp_ctrl_inst[3].sdip_reg_amp_av_delay  |    <0.001 |
+|   amp_ctrl_inst[3].sdip_reg_amp_vv_delay  |    <0.001 |
+|   amp_ctrl_inst[3].u_amp_ctrl             |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[3].u_sync_amp_scl         |    <0.001 |
+|   amp_ctrl_inst[3].u_sync_amp_sda         |    <0.001 |
+|   amp_ctrl_inst[40].amp_scl               |     0.000 |
+|   amp_ctrl_inst[40].amp_sda               |     0.000 |
+|   amp_ctrl_inst[40].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[40].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[40].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[40].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[40].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[41].amp_scl               |     0.000 |
+|   amp_ctrl_inst[41].amp_sda               |     0.000 |
+|   amp_ctrl_inst[41].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[41].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[41].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[41].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[41].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[42].amp_scl               |     0.000 |
+|   amp_ctrl_inst[42].amp_sda               |     0.000 |
+|   amp_ctrl_inst[42].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[42].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[42].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[42].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[42].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[43].amp_scl               |     0.000 |
+|   amp_ctrl_inst[43].amp_sda               |     0.000 |
+|   amp_ctrl_inst[43].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[43].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[43].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[43].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[43].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[44].amp_scl               |     0.000 |
+|   amp_ctrl_inst[44].amp_sda               |     0.000 |
+|   amp_ctrl_inst[44].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[44].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[44].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[44].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[44].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[45].amp_scl               |     0.000 |
+|   amp_ctrl_inst[45].amp_sda               |     0.000 |
+|   amp_ctrl_inst[45].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[45].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[45].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[45].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[45].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[46].amp_scl               |     0.000 |
+|   amp_ctrl_inst[46].amp_sda               |     0.000 |
+|   amp_ctrl_inst[46].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[46].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[46].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[46].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[46].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[47].amp_scl               |     0.000 |
+|   amp_ctrl_inst[47].amp_sda               |     0.000 |
+|   amp_ctrl_inst[47].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[47].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[47].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[47].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[47].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[48].amp_scl               |     0.000 |
+|   amp_ctrl_inst[48].amp_sda               |     0.000 |
+|   amp_ctrl_inst[48].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[48].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[48].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[48].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[48].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[49].amp_scl               |     0.000 |
+|   amp_ctrl_inst[49].amp_sda               |     0.000 |
+|   amp_ctrl_inst[49].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[49].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[49].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[49].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[49].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[4].amp_scl                |     0.000 |
+|   amp_ctrl_inst[4].amp_sda                |     0.000 |
+|   amp_ctrl_inst[4].sdip_reg_amp_av_delay  |    <0.001 |
+|   amp_ctrl_inst[4].sdip_reg_amp_vv_delay  |    <0.001 |
+|   amp_ctrl_inst[4].u_amp_ctrl             |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[4].u_sync_amp_scl         |    <0.001 |
+|   amp_ctrl_inst[4].u_sync_amp_sda         |    <0.001 |
+|   amp_ctrl_inst[50].amp_scl               |     0.000 |
+|   amp_ctrl_inst[50].amp_sda               |     0.000 |
+|   amp_ctrl_inst[50].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[50].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[50].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[50].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[50].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[51].amp_scl               |     0.000 |
+|   amp_ctrl_inst[51].amp_sda               |     0.000 |
+|   amp_ctrl_inst[51].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[51].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[51].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[51].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[51].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[52].amp_scl               |     0.000 |
+|   amp_ctrl_inst[52].amp_sda               |     0.000 |
+|   amp_ctrl_inst[52].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[52].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[52].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[52].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[52].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[53].amp_scl               |     0.000 |
+|   amp_ctrl_inst[53].amp_sda               |     0.000 |
+|   amp_ctrl_inst[53].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[53].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[53].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[53].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[53].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[54].amp_scl               |     0.000 |
+|   amp_ctrl_inst[54].amp_sda               |     0.000 |
+|   amp_ctrl_inst[54].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[54].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[54].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[54].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[54].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[55].amp_scl               |     0.000 |
+|   amp_ctrl_inst[55].amp_sda               |     0.000 |
+|   amp_ctrl_inst[55].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[55].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[55].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[55].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[55].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[56].amp_scl               |     0.000 |
+|   amp_ctrl_inst[56].amp_sda               |     0.000 |
+|   amp_ctrl_inst[56].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[56].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[56].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[56].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[56].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[57].amp_scl               |     0.000 |
+|   amp_ctrl_inst[57].amp_sda               |     0.000 |
+|   amp_ctrl_inst[57].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[57].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[57].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[57].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[57].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[58].amp_scl               |     0.000 |
+|   amp_ctrl_inst[58].amp_sda               |     0.000 |
+|   amp_ctrl_inst[58].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[58].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[58].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[58].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[58].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[59].amp_scl               |     0.000 |
+|   amp_ctrl_inst[59].amp_sda               |     0.000 |
+|   amp_ctrl_inst[59].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[59].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[59].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[59].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[59].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[5].amp_scl                |     0.000 |
+|   amp_ctrl_inst[5].amp_sda                |     0.000 |
+|   amp_ctrl_inst[5].sdip_reg_amp_av_delay  |    <0.001 |
+|   amp_ctrl_inst[5].sdip_reg_amp_vv_delay  |    <0.001 |
+|   amp_ctrl_inst[5].u_amp_ctrl             |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[5].u_sync_amp_scl         |    <0.001 |
+|   amp_ctrl_inst[5].u_sync_amp_sda         |    <0.001 |
+|   amp_ctrl_inst[60].amp_scl               |     0.000 |
+|   amp_ctrl_inst[60].amp_sda               |     0.000 |
+|   amp_ctrl_inst[60].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[60].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[60].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[60].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[60].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[61].amp_scl               |     0.000 |
+|   amp_ctrl_inst[61].amp_sda               |     0.000 |
+|   amp_ctrl_inst[61].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[61].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[61].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[61].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[61].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[62].amp_scl               |     0.000 |
+|   amp_ctrl_inst[62].amp_sda               |     0.000 |
+|   amp_ctrl_inst[62].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[62].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[62].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[62].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[62].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[63].amp_scl               |     0.000 |
+|   amp_ctrl_inst[63].amp_sda               |     0.000 |
+|   amp_ctrl_inst[63].sdip_reg_amp_av_delay |    <0.001 |
+|   amp_ctrl_inst[63].sdip_reg_amp_vv_delay |    <0.001 |
+|   amp_ctrl_inst[63].u_amp_ctrl            |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[63].u_sync_amp_scl        |    <0.001 |
+|   amp_ctrl_inst[63].u_sync_amp_sda        |    <0.001 |
+|   amp_ctrl_inst[6].amp_scl                |     0.000 |
+|   amp_ctrl_inst[6].amp_sda                |     0.000 |
+|   amp_ctrl_inst[6].sdip_reg_amp_av_delay  |    <0.001 |
+|   amp_ctrl_inst[6].sdip_reg_amp_vv_delay  |    <0.001 |
+|   amp_ctrl_inst[6].u_amp_ctrl             |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[6].u_sync_amp_scl         |    <0.001 |
+|   amp_ctrl_inst[6].u_sync_amp_sda         |    <0.001 |
+|   amp_ctrl_inst[7].amp_scl                |     0.000 |
+|   amp_ctrl_inst[7].amp_sda                |     0.000 |
+|   amp_ctrl_inst[7].sdip_reg_amp_av_delay  |    <0.001 |
+|   amp_ctrl_inst[7].sdip_reg_amp_vv_delay  |    <0.001 |
+|   amp_ctrl_inst[7].u_amp_ctrl             |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[7].u_sync_amp_scl         |    <0.001 |
+|   amp_ctrl_inst[7].u_sync_amp_sda         |    <0.001 |
+|   amp_ctrl_inst[8].amp_scl                |     0.000 |
+|   amp_ctrl_inst[8].amp_sda                |     0.000 |
+|   amp_ctrl_inst[8].sdip_reg_amp_av_delay  |    <0.001 |
+|   amp_ctrl_inst[8].sdip_reg_amp_vv_delay  |    <0.001 |
+|   amp_ctrl_inst[8].u_amp_ctrl             |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[8].u_sync_amp_scl         |    <0.001 |
+|   amp_ctrl_inst[8].u_sync_amp_sda         |    <0.001 |
+|   amp_ctrl_inst[9].amp_scl                |     0.000 |
+|   amp_ctrl_inst[9].amp_sda                |     0.000 |
+|   amp_ctrl_inst[9].sdip_reg_amp_av_delay  |    <0.001 |
+|   amp_ctrl_inst[9].sdip_reg_amp_vv_delay  |    <0.001 |
+|   amp_ctrl_inst[9].u_amp_ctrl             |    <0.001 |
+|     u_i2cm                                |    <0.001 |
+|   amp_ctrl_inst[9].u_sync_amp_scl         |    <0.001 |
+|   amp_ctrl_inst[9].u_sync_amp_sda         |    <0.001 |
+|   i2cSlaveInst                            |    <0.001 |
+|     u_serialInterface                     |    <0.001 |
+|   inlet_scl                               |     0.000 |
+|   inlet_sda                               |     0.000 |
+|   iobuf_sclSlave                          |     0.000 |
+|   iobuf_sdaSlave                          |     0.000 |
+|   outlet_scl                              |     0.000 |
+|   outlet_sda                              |     0.000 |
+|   u_dna_master                            |    <0.001 |
+|   u_fan_temp                              |    <0.001 |
+|     fan                                   |    <0.001 |
+|     in_temp                               |    <0.001 |
+|       i2cm                                |    <0.001 |
+|     out_temp                              |    <0.001 |
+|       i2cm                                |    <0.001 |
+|   u_sync_inlet_scl                        |    <0.001 |
+|   u_sync_inlet_sda                        |    <0.001 |
+|   u_sync_outlet_scl                       |    <0.001 |
+|   u_sync_outlet_sda                       |    <0.001 |
+|   u_sync_pres                             |    <0.001 |
++-------------------------------------------+-----------+
+
+

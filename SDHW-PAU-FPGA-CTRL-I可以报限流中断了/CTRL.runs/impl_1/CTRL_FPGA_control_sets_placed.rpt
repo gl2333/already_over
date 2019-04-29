@@ -1,0 +1,943 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Apr 25 14:53:12 2019
+| Host         : SDHW-GL running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file CTRL_FPGA_control_sets_placed.rpt
+| Design       : CTRL_FPGA
+| Device       : xc7a100t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   876 |
+| Unused register locations in slices containing registers |   956 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |           68 |
+|      8 |           65 |
+|     12 |            2 |
+|    16+ |          741 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            2506 |          731 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |           17072 |         3298 |
+| Yes          | No                    | No                     |              92 |           22 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |           16838 |         2408 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------+---------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+----------------+
+|    Clock Signal   |                               Enable Signal                               |                             Set/Reset Signal                            | Slice Load Count | Bel Load Count |
++-------------------+---------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+----------------+
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[43].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[29].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[63].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[56].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[20].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[10].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[0].u_amp_ctrl/u_i2cm/sclOut0                              |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[44].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[45].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[2].u_amp_ctrl/u_i2cm/sclOut0                              |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[58].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[21].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[30].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[33].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | u_fan_temp/in_temp/i2cm/sclOut0                                         |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[16].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[32].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[57].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[59].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[24].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[46].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[31].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[8].u_amp_ctrl/u_i2cm/sclOut0                              |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[5].u_amp_ctrl/u_i2cm/sclOut0                              |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[12].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[49].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[47].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[34].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[23].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[60].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[48].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[35].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[52].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[17].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[36].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[9].u_amp_ctrl/u_i2cm/sclOut0                              |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[37].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[11].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[61].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[38].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[26].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[4].u_amp_ctrl/u_i2cm/sclOut0                              |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[39].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[13].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[50].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[15].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[3].u_amp_ctrl/u_i2cm/sclOut0                              |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[19].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | u_fan_temp/out_temp/i2cm/sclOut0                                        |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[40].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[54].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[42].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[18].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[25].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[53].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[1].u_amp_ctrl/u_i2cm/sclOut0                              |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[41].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[22].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[51].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[6].u_amp_ctrl/u_i2cm/sclOut0                              |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[28].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[14].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[62].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[55].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/next_sdaOut                                | i2cSlaveInst/u_serialInterface/FSM_sequential_CurrState_SISt[3]_i_1_n_0 |                1 |              2 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/IRQ_reg                                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[7].u_amp_ctrl/u_i2cm/sclOut0                              |                1 |              2 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[27].u_amp_ctrl/u_i2cm/sclOut0                             |                1 |              2 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[26].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[26].u_amp_ctrl/u_i2cm/RSTA                                |                3 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[63].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[63].u_amp_ctrl/u_i2cm/RSTA                                |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[16].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[16].u_amp_ctrl/u_i2cm/RSTA                                |                3 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[37].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[37].u_amp_ctrl/u_i2cm/RSTA                                |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[35].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[35].u_amp_ctrl/u_i2cm/RSTA                                |                3 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[23].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[23].u_amp_ctrl/u_i2cm/RSTA                                |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[36].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[36].u_amp_ctrl/u_i2cm/RSTA                                |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[56].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[56].u_amp_ctrl/u_i2cm/RSTA                                |                1 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[17].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[17].u_amp_ctrl/u_i2cm/RSTA                                |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[25].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[25].u_amp_ctrl/u_i2cm/RSTA                                |                3 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[29].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[29].u_amp_ctrl/u_i2cm/RSTA                                |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[0].u_amp_ctrl/u_i2cm/byteCnt0                               | amp_ctrl_inst[0].u_amp_ctrl/u_i2cm/RSTA                                 |                3 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[7].u_amp_ctrl/u_i2cm/byteCnt0                               | amp_ctrl_inst[7].u_amp_ctrl/u_i2cm/RSTA                                 |                1 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[30].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[30].u_amp_ctrl/u_i2cm/RSTA                                |                1 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[57].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[57].u_amp_ctrl/u_i2cm/RSTA                                |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[61].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[61].u_amp_ctrl/u_i2cm/RSTA                                |                4 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[34].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[34].u_amp_ctrl/u_i2cm/RSTA                                |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[55].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[55].u_amp_ctrl/u_i2cm/RSTA                                |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[8].u_amp_ctrl/u_i2cm/byteCnt0                               | amp_ctrl_inst[8].u_amp_ctrl/u_i2cm/RSTA                                 |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[6].u_amp_ctrl/u_i2cm/byteCnt0                               | amp_ctrl_inst[6].u_amp_ctrl/u_i2cm/RSTA                                 |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[38].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[38].u_amp_ctrl/u_i2cm/RSTA                                |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[33].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[33].u_amp_ctrl/u_i2cm/RSTA                                |                3 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[59].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[59].u_amp_ctrl/u_i2cm/RSTA                                |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[31].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[31].u_amp_ctrl/u_i2cm/RSTA                                |                3 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[2].u_amp_ctrl/u_i2cm/byteCnt0                               | amp_ctrl_inst[2].u_amp_ctrl/u_i2cm/RSTA                                 |                3 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[62].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[62].u_amp_ctrl/u_i2cm/RSTA                                |                3 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[15].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[15].u_amp_ctrl/u_i2cm/RSTA                                |                3 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[58].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[58].u_amp_ctrl/u_i2cm/RSTA                                |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[5].u_amp_ctrl/u_i2cm/byteCnt0                               | amp_ctrl_inst[5].u_amp_ctrl/u_i2cm/RSTA                                 |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[24].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[24].u_amp_ctrl/u_i2cm/RSTA                                |                1 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[47].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[47].u_amp_ctrl/u_i2cm/RSTA                                |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[12].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[12].u_amp_ctrl/u_i2cm/RSTA                                |                3 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[32].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[32].u_amp_ctrl/u_i2cm/RSTA                                |                1 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[28].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[28].u_amp_ctrl/u_i2cm/RSTA                                |                1 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[10].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[10].u_amp_ctrl/u_i2cm/RSTA                                |                3 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[27].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[27].u_amp_ctrl/u_i2cm/RSTA                                |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[21].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[21].u_amp_ctrl/u_i2cm/RSTA                                |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[60].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[60].u_amp_ctrl/u_i2cm/RSTA                                |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[39].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[39].u_amp_ctrl/u_i2cm/RSTA                                |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[3].u_amp_ctrl/u_i2cm/byteCnt0                               | amp_ctrl_inst[3].u_amp_ctrl/u_i2cm/RSTA                                 |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[40].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[40].u_amp_ctrl/u_i2cm/RSTA                                |                3 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[22].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[22].u_amp_ctrl/u_i2cm/RSTA                                |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[13].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[13].u_amp_ctrl/u_i2cm/RSTA                                |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[41].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[41].u_amp_ctrl/u_i2cm/RSTA                                |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[42].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[42].u_amp_ctrl/u_i2cm/RSTA                                |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[18].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[18].u_amp_ctrl/u_i2cm/RSTA                                |                3 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[14].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[14].u_amp_ctrl/u_i2cm/RSTA                                |                1 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[52].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[52].u_amp_ctrl/u_i2cm/RSTA                                |                1 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[51].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[51].u_amp_ctrl/u_i2cm/RSTA                                |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[43].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[43].u_amp_ctrl/u_i2cm/RSTA                                |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[11].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[11].u_amp_ctrl/u_i2cm/RSTA                                |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[44].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[44].u_amp_ctrl/u_i2cm/RSTA                                |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[45].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[45].u_amp_ctrl/u_i2cm/RSTA                                |                3 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[19].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[19].u_amp_ctrl/u_i2cm/RSTA                                |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[46].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[46].u_amp_ctrl/u_i2cm/RSTA                                |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[20].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[20].u_amp_ctrl/u_i2cm/RSTA                                |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[49].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[49].u_amp_ctrl/u_i2cm/RSTA                                |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[48].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[48].u_amp_ctrl/u_i2cm/RSTA                                |                4 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[9].u_amp_ctrl/u_i2cm/byteCnt0                               | amp_ctrl_inst[9].u_amp_ctrl/u_i2cm/RSTA                                 |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[4].u_amp_ctrl/u_i2cm/byteCnt0                               | amp_ctrl_inst[4].u_amp_ctrl/u_i2cm/RSTA                                 |                3 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[50].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[50].u_amp_ctrl/u_i2cm/RSTA                                |                1 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[54].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[54].u_amp_ctrl/u_i2cm/RSTA                                |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[53].u_amp_ctrl/u_i2cm/byteCnt0                              | amp_ctrl_inst[53].u_amp_ctrl/u_i2cm/RSTA                                |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[1].u_amp_ctrl/u_i2cm/byteCnt0                               | amp_ctrl_inst[1].u_amp_ctrl/u_i2cm/RSTA                                 |                2 |              8 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/FSM_sequential_CurrState_SISt[3]_i_2_n_0   | i2cSlaveInst/u_serialInterface/FSM_sequential_CurrState_SISt[3]_i_1_n_0 |                4 |              8 |
+|  CLK_IN_IBUF_BUFG |                                                                           | u_fan_temp/in_temp/i2cm/RSTB                                            |                3 |             12 |
+|  CLK_IN_IBUF_BUFG |                                                                           | u_fan_temp/out_temp/i2cm/RSTB                                           |                2 |             12 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][30]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][0]                     | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[58].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][34]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[58].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[58].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][38]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[10].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][22]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][19]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[57].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][8]                     | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[57].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[57].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][18]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][9]                     | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][5]                     | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[16].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][3]                     | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                4 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][44]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][43]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                4 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[5].u_amp_ctrl/u_i2cm/i_reg[0][0]                            | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][42]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[5].u_amp_ctrl/u_i2cm/E[0]                                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][29]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[5].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][27]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[7].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][24]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[7].u_amp_ctrl/u_i2cm/i_reg[0][0]                            | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][32]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                4 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][28]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][20]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                5 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[60].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[62].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][15]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[60].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][12]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][41]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[60].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[7].u_amp_ctrl/u_i2cm/E[0]                                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][35]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][40]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                4 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[17].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][16]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                5 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[17].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][37]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[17].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/out_write[2].reg_out_air_tl_reg[2][7]_2[0] | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/out_write[3].reg_out_air_tl_reg[3][7]_4[0] | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                4 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[2].u_amp_ctrl/u_i2cm/E[0]                                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[61].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[61].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/out_write[0].reg_out_air_tl_reg[0][7]_0[0] | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/out_write[1].reg_out_air_tl_reg[1][7]_3[0] | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                5 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[61].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[27].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[16].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[27].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[27].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[28].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[15].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[15].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[28].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[15].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[28].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[62].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[25].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[63].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[25].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[63].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[25].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[63].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[26].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[62].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[11].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[11].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[6].u_amp_ctrl/u_i2cm/i_reg[0][0]                            | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[11].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG |                                                                           | u_dna_master/cnt[7]_i_1_n_0                                             |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[6].u_amp_ctrl/u_i2cm/E[0]                                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[23].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[23].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[6].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[23].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                5 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[20].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[26].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[0].u_amp_ctrl/u_i2cm/E[0]                                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[0].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[0].u_amp_ctrl/u_i2cm/i_reg[0][0]                            | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[29].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[29].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[29].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[26].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[24].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[24].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[2].u_amp_ctrl/u_i2cm/i_reg[0][0]                            | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[2].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[24].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[30].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[30].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[30].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[31].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[31].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[31].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                4 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[32].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[32].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[32].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[21].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[21].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[12].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[12].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[12].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[21].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[34].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[34].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[34].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[33].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[33].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[33].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                4 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[35].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[35].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[35].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[22].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[36].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[36].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[36].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[20].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[39].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[39].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[37].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[37].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                4 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[37].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[20].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[38].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                4 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[38].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[38].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[49].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][1]                     | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[39].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[22].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[1].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[3].u_amp_ctrl/u_i2cm/E[0]                                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[3].u_amp_ctrl/u_i2cm/i_reg[0][0]                            | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[3].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[22].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[13].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[1].u_amp_ctrl/u_i2cm/i_reg[0][0]                            | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[40].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[40].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[40].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][25]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[42].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[42].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[42].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[18].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][10]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[55].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[41].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[41].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[41].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[18].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][7]                     | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[51].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                4 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[51].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[51].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                4 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[18].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[55].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][2]                     | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[14].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[14].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[14].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[19].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[55].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][21]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[19].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[10].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[43].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[43].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                4 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[43].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[19].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][17]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[59].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[44].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[44].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[44].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[13].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[13].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][14]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                4 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[45].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[45].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[45].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][13]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[56].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[46].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[46].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[46].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[56].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[9].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[48].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[48].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[48].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[9].u_amp_ctrl/u_i2cm/E[0]                                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][11]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[49].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[47].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[47].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[47].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[49].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[9].u_amp_ctrl/u_i2cm/i_reg[0][0]                            | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[56].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][6]                     | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[52].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][4]                     | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                4 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[4].u_amp_ctrl/u_i2cm/E[0]                                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[4].u_amp_ctrl/u_i2cm/i_reg[0][0]                            | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[4].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                4 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[16].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[52].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[10].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[50].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[50].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[50].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[8].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[8].u_amp_ctrl/u_i2cm/E[0]                                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][39]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[54].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[54].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[54].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[52].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[8].u_amp_ctrl/u_i2cm/i_reg[0][0]                            | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[59].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[53].u_amp_ctrl/u_i2cm/E[0]                                  | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[53].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[53].u_amp_ctrl/u_i2cm/r_rd_reg[0][0]                        | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][36]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[1].u_amp_ctrl/u_i2cm/E[0]                                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][31]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][33]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][59]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][46]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][61]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][49]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][51]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][53]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][50]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][57]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][48]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][55]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][58]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][60]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][62]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][56]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][52]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][63]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][47]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][54]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][45]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/E[0]                                       | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/in_write[1].reg_in_air_tl_reg[1][7]_0[0]   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                5 |             16 |
+|  CLK_IN_IBUF_BUFG | u_fan_temp/out_temp/i2cm/E[1]                                             | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | u_fan_temp/out_temp/i2cm/E[0]                                             | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | u_fan_temp/out_temp/i2cm/E[2]                                             | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | u_fan_temp/out_temp/i2cm/E[3]                                             | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | u_fan_temp/in_temp/i2cm/E[1]                                              | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | u_fan_temp/in_temp/i2cm/E[0]                                              | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                4 |             16 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[59].u_amp_ctrl/u_i2cm/i_reg[0][0]                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][23]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/next_rxData_1                              | i2cSlaveInst/u_serialInterface/FSM_sequential_CurrState_SISt[3]_i_1_n_0 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_al_reg[511][26]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/next_txData_0                              | i2cSlaveInst/u_serialInterface/FSM_sequential_CurrState_SISt[3]_i_1_n_0 |                5 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][0]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][1]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][2]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                4 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][3]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][5]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][6]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][9]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][4]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                4 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][7]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][34]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][63]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][17]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][15]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][22]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                4 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][24]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                4 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][33]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][39]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][30]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][37]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                4 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][25]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][27]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][28]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][16]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][29]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][42]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][10]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][13]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][44]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][45]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][46]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][36]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][47]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][48]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][51]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][54]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][19]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][23]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][26]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                4 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][50]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                5 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][53]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][55]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][56]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][57]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][60]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][49]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][61]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][18]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][21]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][20]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][11]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                4 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][35]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][8]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][38]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][32]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][31]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][52]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][58]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][59]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][62]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][12]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                4 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][43]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][41]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][14]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_res_reg[511][40]                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][22]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][43]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][6]                     | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][4]                     | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][7]                     | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][2]                     | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][18]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][19]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][21]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][23]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][9]                     | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][13]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][26]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][27]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][29]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][33]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][35]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                4 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][38]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][0]                     | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][20]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][39]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][12]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][40]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][17]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][41]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][42]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][30]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][44]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][45]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][46]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][24]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][5]                     | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][1]                     | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][3]                     | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][8]                     | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][10]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][11]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][14]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][25]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][28]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][16]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][32]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][15]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][31]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][34]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][37]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][36]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][55]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][60]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][47]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][51]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][53]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][50]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][58]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                1 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][49]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                4 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][57]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                4 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][63]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][54]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][52]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][56]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][59]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][48]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][62]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_amp_vl_reg[504][61]                    | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_cf_gen_pw_reg[63]_0[1]                 | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_cf_gen_pw_reg[63]_0[4]                 | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_cf_gen_pw_reg[63]_0[6]                 | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                4 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_cf_gen_pw_reg[63]_0[3]                 | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_cf_gen_pw_reg[63]_0[7]                 | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                4 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_cf_gen_pw_reg[63]_0[2]                 | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_cf_gen_pw_reg[63]_0[0]                 | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                2 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_cf_gen_pw_reg[63]_0[5]                 | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                4 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/reg_cf_gen_scr_reg[0]_0[0]                 | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                3 |             16 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/next_dataOut                               | i2cSlaveInst/u_serialInterface/FSM_sequential_CurrState_SISt[3]_i_1_n_0 |                6 |             24 |
+|  CLK_IN_IBUF_BUFG |                                                                           | i2cSlaveInst/u_serialInterface/FSM_sequential_CurrState_SISt[3]_i_1_n_0 |                6 |             24 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[17].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[61].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[62].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[15].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[63].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[8].u_amp_ctrl/u_i2cm/clear                                |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[6].u_amp_ctrl/u_i2cm/clear                                |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[7].u_amp_ctrl/u_i2cm/clear                                |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[10].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[16].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[9].u_amp_ctrl/u_i2cm/clear                                |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[20].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[19].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[18].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[22].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[21].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[24].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[23].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[11].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[25].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[26].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[28].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[27].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | u_fan_temp/out_temp/i2cm/clear                                          |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | u_fan_temp/in_temp/i2cm/clear                                           |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[55].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[29].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[0].u_amp_ctrl/u_i2cm/clear                                |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[2].u_amp_ctrl/u_i2cm/clear                                |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[30].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[32].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[33].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[31].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[12].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[34].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[37].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[35].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[36].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[38].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[39].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[3].u_amp_ctrl/u_i2cm/clear                                |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[40].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[13].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[41].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[42].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[14].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[52].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[51].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[43].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[47].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[44].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[45].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[46].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[49].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[48].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[4].u_amp_ctrl/u_i2cm/clear                                |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[50].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[54].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[53].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[1].u_amp_ctrl/u_i2cm/clear                                |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[56].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[57].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[59].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[58].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[5].u_amp_ctrl/u_i2cm/clear                                |                4 |             26 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[60].u_amp_ctrl/u_i2cm/clear                               |                4 |             26 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[41].u_amp_ctrl/wrLen[1]_i_1__27_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[42].u_amp_ctrl/wrLen[1]_i_1__6_n_0                          | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |               10 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[18].u_amp_ctrl/wrLen[1]_i_1__12_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                9 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[21].u_amp_ctrl/wrLen[1]_i_1__3_n_0                          | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[40].u_amp_ctrl/wrLen[1]_i_1__59_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[3].u_amp_ctrl/wrLen[1]_i_1__40_n_0                          | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[39].u_amp_ctrl/wrLen[1]_i_1__42_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[38].u_amp_ctrl/wrLen[1]_i_1__43_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[37].u_amp_ctrl/wrLen[1]_i_1__19_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[36].u_amp_ctrl/wrLen[1]_i_1__47_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[35].u_amp_ctrl/wrLen[1]_i_1__44_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[20].u_amp_ctrl/wrLen[1]_i_1__50_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[33].u_amp_ctrl/wrLen[1]_i_1__48_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[12].u_amp_ctrl/wrLen[1]_i_1__14_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[34].u_amp_ctrl/wrLen[1]_i_1__20_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[32].u_amp_ctrl/wrLen[1]_i_1__58_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[31].u_amp_ctrl/wrLen[1]_i_1__2_n_0                          | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[2].u_amp_ctrl/wrLen[1]_i_1__41_n_0                          | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[63].u_amp_ctrl/wrLen[1]_i_1__33_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[30].u_amp_ctrl/wrLen[1]_i_1__1_n_0                          | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                5 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[24].u_amp_ctrl/wrLen[1]_i_1__49_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[29].u_amp_ctrl/wrLen[1]_i_1__13_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                5 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[0].u_amp_ctrl/wrLen[1]_i_1__32_n_0                          | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[22].u_amp_ctrl/wrLen[1]_i_1__54_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[62].u_amp_ctrl/wrLen[1]_i_1__34_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                9 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[10].u_amp_ctrl/wrLen[1]_i_1__39_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[61].u_amp_ctrl/wrLen[1]_i_1__35_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                5 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[15].u_amp_ctrl/wrLen[1]_i_1__9_n_0                          | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[23].u_amp_ctrl/wrLen[1]_i_1__55_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[16].u_amp_ctrl/wrLen[1]_i_1__37_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[60].u_amp_ctrl/wrLen[1]_i_1__21_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[5].u_amp_ctrl/wrLen[1]_i_1__16_n_0                          | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                5 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[7].u_amp_ctrl/wrLen[1]_i_1__15_n_0                          | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[11].u_amp_ctrl/wrLen[1]_i_1__51_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[59].u_amp_ctrl/wrLen[1]_i_1__22_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                5 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[6].u_amp_ctrl/wrLen[1]_i_1__52_n_0                          | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[57].u_amp_ctrl/wrLen[1]_i_1__24_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                5 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[58].u_amp_ctrl/wrLen[1]_i_1__23_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[56].u_amp_ctrl/wrLen[1]_i_1__45_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[25].u_amp_ctrl/wrLen[1]_i_1_n_0                             | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[55].u_amp_ctrl/wrLen[1]_i_1__5_n_0                          | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[27].u_amp_ctrl/wrLen[1]_i_1__56_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[54].u_amp_ctrl/wrLen[1]_i_1__36_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[9].u_amp_ctrl/wrLen[1]_i_1__4_n_0                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[1].u_amp_ctrl/wrLen[1]_i_1__31_n_0                          | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[52].u_amp_ctrl/wrLen[1]_i_1__62_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[28].u_amp_ctrl/wrLen[1]_i_1__57_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[26].u_amp_ctrl/wrLen[1]_i_1__0_n_0                          | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[53].u_amp_ctrl/wrLen[1]_i_1__25_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[50].u_amp_ctrl/wrLen[1]_i_1__60_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[4].u_amp_ctrl/wrLen[1]_i_1__17_n_0                          | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[8].u_amp_ctrl/wrLen[1]_i_1__53_n_0                          | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[51].u_amp_ctrl/wrLen[1]_i_1__61_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[49].u_amp_ctrl/wrLen[1]_i_1__7_n_0                          | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[47].u_amp_ctrl/wrLen[1]_i_1__10_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[48].u_amp_ctrl/wrLen[1]_i_1__8_n_0                          | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[44].u_amp_ctrl/wrLen[1]_i_1__11_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[46].u_amp_ctrl/wrLen[1]_i_1__46_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[45].u_amp_ctrl/wrLen[1]_i_1__18_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[43].u_amp_ctrl/wrLen[1]_i_1__26_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[13].u_amp_ctrl/wrLen[1]_i_1__38_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                5 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[14].u_amp_ctrl/wrLen[1]_i_1__30_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                9 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[19].u_amp_ctrl/wrLen[1]_i_1__28_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             30 |
+|  CLK_IN_IBUF_BUFG | amp_ctrl_inst[17].u_amp_ctrl/wrLen[1]_i_1__29_n_0                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             30 |
+|  CLK_IN_IBUF_BUFG | i_update_r__3[62]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__0__0__0[33]                                                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__0__0__0[20]                                                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__0__0__0[46]                                                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__3[63]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                5 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__1__0[6]                                                       | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__2[14]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__0__0__0[11]                                                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__2[57]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__2[19]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__1__0[28]                                                      | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__1[5]                                                          | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r[18]                                                            | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                9 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__0__0[31]                                                      | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r[44]                                                            | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__0__0[42]                                                      | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                5 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r[21]                                                            | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r[29]                                                            | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r[49]                                                            | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |               10 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__3[16]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__0__0[9]                                                       | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__0[4]                                                          | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r[55]                                                            | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__0[25]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__0[47]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__2[59]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__0__0[12]                                                      | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r[48]                                                            | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__0__0[15]                                                      | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__0__0[26]                                                      | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__0__0[30]                                                      | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__2[56]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__4[35]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__4[39]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__3[61]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__4[40]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__3[10]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__1__0[27]                                                      | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__1[37]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__2[41]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                9 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__2[43]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__1__0[17]                                                      | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__2[53]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__2[60]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__1__0[22]                                                      | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__3[3]                                                          | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__0__0__0[24]                                                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__3[13]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__3[2]                                                          | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__0__0__0[36]                                                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__1[34]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__1[45]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__1__0[23]                                                      | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__1__0[32]                                                      | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                9 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__3[54]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__4[38]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__2[58]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__4[50]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                9 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__2[1]                                                          | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__2[0]                                                          | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__4[51]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__1__0[8]                                                       | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__4[52]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             56 |
+|  CLK_IN_IBUF_BUFG | i_update_r__1[7]                                                          | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             56 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[56].u_amp_ctrl/u_i2cm/cnt_reg_0_sn_1                      |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[55].u_amp_ctrl/u_i2cm/cnt_reg[0]                          |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[1].u_amp_ctrl/u_i2cm/cnt_reg_0_sn_1                       |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[53].u_amp_ctrl/u_i2cm/cnt_reg_0_sn_1                      |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[54].u_amp_ctrl/u_i2cm/cnt_reg_0_sn_1                      |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[50].u_amp_ctrl/u_i2cm/cnt_reg[0]                          |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[4].u_amp_ctrl/u_i2cm/cnt_reg[0]                           |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[48].u_amp_ctrl/u_i2cm/cnt_reg[0]                          |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[47].u_amp_ctrl/u_i2cm/cnt_reg[0]                          |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[49].u_amp_ctrl/u_i2cm/cnt_reg[0]                          |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[46].u_amp_ctrl/u_i2cm/cnt_reg_0_sn_1                      |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[45].u_amp_ctrl/u_i2cm/cnt_reg_0_sn_1                      |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[44].u_amp_ctrl/u_i2cm/cnt_reg[0]                          |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[43].u_amp_ctrl/u_i2cm/cnt_reg_0_sn_1                      |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[51].u_amp_ctrl/u_i2cm/cnt_reg[0]                          |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[52].u_amp_ctrl/u_i2cm/cnt_reg[0]                          |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[41].u_amp_ctrl/u_i2cm/cnt_reg_0_sn_1                      |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[13].u_amp_ctrl/u_i2cm/cnt_reg_0_sn_1                      |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[42].u_amp_ctrl/u_i2cm/cnt_reg[0]                          |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[40].u_amp_ctrl/u_i2cm/cnt_reg[0]                          |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[3].u_amp_ctrl/u_i2cm/cnt_reg_0_sn_1                       |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[39].u_amp_ctrl/u_i2cm/cnt_reg[0]                          |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[38].u_amp_ctrl/u_i2cm/cnt_reg[0]                          |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[37].u_amp_ctrl/u_i2cm/cnt_reg_0_sn_1                      |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[36].u_amp_ctrl/u_i2cm/cnt_reg_0_sn_1                      |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[35].u_amp_ctrl/u_i2cm/cnt_reg[0]                          |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[34].u_amp_ctrl/u_i2cm/cnt_reg_0_sn_1                      |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[12].u_amp_ctrl/u_i2cm/cnt_reg[0]                          |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[31].u_amp_ctrl/u_i2cm/cnt_reg[0]                          |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[33].u_amp_ctrl/u_i2cm/cnt_reg_0_sn_1                      |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[32].u_amp_ctrl/u_i2cm/cnt_reg[0]                          |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[30].u_amp_ctrl/u_i2cm/cnt_reg[0]                          |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[2].u_amp_ctrl/u_i2cm/cnt_reg_0_sn_1                       |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[0].u_amp_ctrl/u_i2cm/cnt_reg_0_sn_1                       |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[29].u_amp_ctrl/u_i2cm/cnt_reg[0]                          |                8 |             64 |
+|  CLK_IN_IBUF_BUFG | LED_OBUF[1]                                                               | i2c_active_cnt0                                                         |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[14].u_amp_ctrl/u_i2cm/cnt_reg_0_sn_1                      |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[63].u_amp_ctrl/u_i2cm/cnt_reg[0]                          |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | chip_active_cnt[0]_i_1_n_0                                              |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | u_fan_temp/in_temp/i2cm/cnt_reg[0]                                      |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | u_fan_temp/out_temp/i2cm/cnt_reg[0]                                     |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | u_fan_temp/fan/pwm_total_cnt[0]_i_1_n_0                                 |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[27].u_amp_ctrl/u_i2cm/cnt_reg[0]                          |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[28].u_amp_ctrl/u_i2cm/cnt_reg[0]                          |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[25].u_amp_ctrl/u_i2cm/cnt_reg_0_sn_1                      |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[11].u_amp_ctrl/u_i2cm/cnt_reg_0_sn_1                      |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[26].u_amp_ctrl/u_i2cm/cnt_reg[0]                          |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[23].u_amp_ctrl/u_i2cm/cnt_reg[0]                          |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[24].u_amp_ctrl/u_i2cm/cnt_reg_0_sn_1                      |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[21].u_amp_ctrl/u_i2cm/cnt_reg[0]                          |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[20].u_amp_ctrl/u_i2cm/cnt_reg_0_sn_1                      |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[22].u_amp_ctrl/u_i2cm/cnt_reg[0]                          |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[18].u_amp_ctrl/u_i2cm/cnt_reg[0]                          |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[19].u_amp_ctrl/u_i2cm/cnt_reg_0_sn_1                      |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[9].u_amp_ctrl/u_i2cm/cnt_reg[0]                           |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[8].u_amp_ctrl/u_i2cm/cnt_reg[0]                           |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[16].u_amp_ctrl/u_i2cm/cnt_reg_0_sn_1                      |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[10].u_amp_ctrl/u_i2cm/cnt_reg[0]                          |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[7].u_amp_ctrl/u_i2cm/cnt_reg[0]                           |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[62].u_amp_ctrl/u_i2cm/cnt_reg_0_sn_1                      |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[6].u_amp_ctrl/u_i2cm/cnt_reg[0]                           |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[15].u_amp_ctrl/u_i2cm/cnt_reg[0]                          |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[61].u_amp_ctrl/u_i2cm/cnt_reg_0_sn_1                      |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[17].u_amp_ctrl/u_i2cm/cnt_reg_0_sn_1                      |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[60].u_amp_ctrl/u_i2cm/cnt_reg_0_sn_1                      |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[5].u_amp_ctrl/u_i2cm/cnt_reg[0]                           |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[57].u_amp_ctrl/u_i2cm/cnt_reg_0_sn_1                      |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[59].u_amp_ctrl/u_i2cm/cnt_reg_0_sn_1                      |                8 |             64 |
+|  CLK_IN_IBUF_BUFG |                                                                           | amp_ctrl_inst[58].u_amp_ctrl/u_i2cm/cnt_reg_0_sn_1                      |                8 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r[14]                                                            | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r[17]                                                            | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r[42]                                                            | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                9 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r[45]                                                            | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r[12]                                                            | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__1__0[32]                                                      | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__1[44]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__1__0[6]                                                       | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__1[37]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__0__0[10]                                                      | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__2[60]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__3[2]                                                          | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__0__0__0[33]                                                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__1__0[8]                                                       | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__3[3]                                                          | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__0__0__0[36]                                                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__4[7]                                                          | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__4[15]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__4[18]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__1__0[22]                                                      | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__4[21]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__4[29]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__1__0[28]                                                      | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__1[34]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__1__0[39]                                                      | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__1[26]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__1__0[50]                                                      | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__0__0__0[11]                                                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                9 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__1__0[51]                                                      | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__2[0]                                                          | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__2[1]                                                          | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__1__0[40]                                                      | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__1__0[52]                                                      | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__2[19]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__2[57]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__3[16]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__0__0[63]                                                      | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__0__0__0[46]                                                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__1__0[38]                                                      | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__2[58]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__2[59]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__0__0__0[24]                                                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__3[54]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__0[25]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__3[61]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__3[62]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                9 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__0__0__0[56]                                                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__1__0[23]                                                      | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__2[47]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__1__0[27]                                                      | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                9 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__1__0[35]                                                      | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__2[48]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__2[9]                                                          | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__2[41]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__2[43]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                9 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__3[13]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                9 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__0__0__0[20]                                                   | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__4[4]                                                          | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__4[5]                                                          | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__2[53]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__4[31]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                7 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__4[49]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                8 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__4[30]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             64 |
+|  CLK_IN_IBUF_BUFG | v_update_r__4[55]                                                         | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |                6 |             64 |
+|  CLK_IN_IBUF_BUFG | i2cSlaveInst/u_serialInterface/regAddr[15]_i_1_n_0                        |                                                                         |               22 |             92 |
+|  CLK_IN_IBUF_BUFG | u_dna_master/dna_out0                                                     | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |               15 |            114 |
+|  CLK_IN_IBUF_BUFG |                                                                           |                                                                         |              771 |           2644 |
+|  CLK_IN_IBUF_BUFG |                                                                           | u_fan_temp/out_temp/i2cm/STATE_reg[0]_0                                 |             2410 |          10808 |
++-------------------+---------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+----------------+
+
+

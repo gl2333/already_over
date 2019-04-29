@@ -1,0 +1,15 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+C:/Users/admin/Desktop/SDHW-PAU-FPGA-CTRL-I/CTRL.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+C:/Users/admin/Desktop/SDHW-PAU-FPGA-CTRL-I/CTRL.srcs/sim_1/new/tb_sync_deb.v,1554778644,verilog,,,,tb_sync_deb,,,../../../../src,,,,,
+C:/Users/admin/Desktop/SDHW-PAU-FPGA-CTRL-I/CTRL.srcs/sources_1/new/tb_value_delay.v,1555395687,verilog,,,,tb_value_delay,,,../../../../src,,,,,
+C:/Users/admin/Desktop/SDHW-PAU-FPGA-CTRL-I/CTRL.srcs/sources_1/new/value_delay.v,1555484321,verilog,,C:/Users/admin/Desktop/SDHW-PAU-FPGA-CTRL-I/CTRL.srcs/sources_1/new/tb_value_delay.v,C:/Users/admin/Desktop/SDHW-PAU-FPGA-CTRL-I/src/timescale.vh;C:/Users/admin/Desktop/SDHW-PAU-FPGA-CTRL-I/src/simulation.vh,value_delay,,,../../../../src,,,,,
+C:/Users/admin/Desktop/SDHW-PAU-FPGA-CTRL-I/src/amp_ctrl.v,1554778644,verilog,,C:/Users/admin/Desktop/SDHW-PAU-FPGA-CTRL-I/src/tb_amp_ctrl.v,C:/Users/admin/Desktop/SDHW-PAU-FPGA-CTRL-I/src/timescale.vh;C:/Users/admin/Desktop/SDHW-PAU-FPGA-CTRL-I/src/simulation.vh,amp_ctrl,,,../../../../src,,,,,
+C:/Users/admin/Desktop/SDHW-PAU-FPGA-CTRL-I/src/deb_ns.v,1554778644,verilog,,C:/Users/admin/Desktop/SDHW-PAU-FPGA-CTRL-I/src/sync.v,,deb_ns,,,../../../../src,,,,,
+C:/Users/admin/Desktop/SDHW-PAU-FPGA-CTRL-I/src/i2cMaster.v,1554778644,verilog,,C:/Users/admin/Desktop/SDHW-PAU-FPGA-CTRL-I/src/amp_ctrl.v,C:/Users/admin/Desktop/SDHW-PAU-FPGA-CTRL-I/src/timescale.vh;C:/Users/admin/Desktop/SDHW-PAU-FPGA-CTRL-I/src/simulation.vh,i2cMaster,,,../../../../src,,,,,
+C:/Users/admin/Desktop/SDHW-PAU-FPGA-CTRL-I/src/simulation.vh,1554778644,verilog,,,,,,,,,,,,
+C:/Users/admin/Desktop/SDHW-PAU-FPGA-CTRL-I/src/sync.v,1554778644,verilog,,C:/Users/admin/Desktop/SDHW-PAU-FPGA-CTRL-I/CTRL.srcs/sim_1/new/tb_sync_deb.v,C:/Users/admin/Desktop/SDHW-PAU-FPGA-CTRL-I/src/timescale.vh,sync,,,../../../../src,,,,,
+C:/Users/admin/Desktop/SDHW-PAU-FPGA-CTRL-I/src/tb_amp_ctrl.v,1555396579,verilog,,,C:/Users/admin/Desktop/SDHW-PAU-FPGA-CTRL-I/src/timescale.vh;C:/Users/admin/Desktop/SDHW-PAU-FPGA-CTRL-I/src/simulation.vh,tb_amp_ctrl,,,../../../../src,,,,,
+C:/Users/admin/Desktop/SDHW-PAU-FPGA-CTRL-I/src/timescale.vh,1554778644,verilog,,,,,,,,,,,,
