@@ -1,0 +1,105 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 60 -defaultsOSRD
+preplace port XDCR_SCL -pg 1 -y 430 -defaultsOSRD
+preplace port XDCR_SDA -pg 1 -y 450 -defaultsOSRD
+preplace port RTC_SDA -pg 1 -y 520 -defaultsOSRD
+preplace port RTC_SCL -pg 1 -y 500 -defaultsOSRD
+preplace port TRIGGER -pg 1 -y 420 -defaultsOSRD
+preplace port XDCR_PRESENT -pg 1 -y 410 -defaultsOSRD
+preplace port CLOCK_SCL -pg 1 -y 460 -defaultsOSRD
+preplace port USM_PWR_SW -pg 1 -y 440 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 80 -defaultsOSRD
+preplace port CLOCK_SDA -pg 1 -y 480 -defaultsOSRD
+preplace portBus PL_UNUSED -pg 1 -y 490 -defaultsOSRD
+preplace portBus USM_ALARM_D -pg 1 -y 730 -defaultsOSRD
+preplace portBus USM_DRIVE_A_P -pg 1 -y 760 -defaultsOSRD
+preplace portBus CTRL_SDA -pg 1 -y 600 -defaultsOSRD
+preplace portBus CTRL_SCL -pg 1 -y 580 -defaultsOSRD
+preplace portBus PWR_INHIBIT -pg 1 -y 820 -defaultsOSRD
+preplace portBus CTRL_PROG_B -pg 1 -y 640 -defaultsOSRD
+preplace portBus PWR_AC_OK -pg 1 -y 750 -defaultsOSRD
+preplace portBus USM_LIMIT -pg 1 -y 530 -defaultsOSRD
+preplace portBus PL_LED -pg 1 -y 620 -defaultsOSRD
+preplace portBus PHA_SDA -pg 1 -y 560 -defaultsOSRD
+preplace portBus USM_POWERCTRL -pg 1 -y 720 -defaultsOSRD
+preplace portBus PHA_IRQ -pg 1 -y 590 -defaultsOSRD
+preplace portBus PL_SWITCH -pg 1 -y 470 -defaultsOSRD
+preplace portBus PWR_DC_OK -pg 1 -y 770 -defaultsOSRD
+preplace portBus PHA_PROG_B -pg 1 -y 660 -defaultsOSRD
+preplace portBus USM_OUT_Z -pg 1 -y 650 -defaultsOSRD
+preplace portBus CTRL_IRQ -pg 1 -y 570 -defaultsOSRD
+preplace portBus USM_OUT_A -pg 1 -y 610 -defaultsOSRD
+preplace portBus USM_ALARM_Z -pg 1 -y 710 -defaultsOSRD
+preplace portBus PRESENT -pg 1 -y 550 -defaultsOSRD
+preplace portBus USM_OUT_B -pg 1 -y 630 -defaultsOSRD
+preplace portBus USM_ALARM_A -pg 1 -y 670 -defaultsOSRD
+preplace portBus USM_DRIVE_B_N -pg 1 -y 780 -defaultsOSRD
+preplace portBus PWR_SCL -pg 1 -y 680 -defaultsOSRD
+preplace portBus PWR_SDA -pg 1 -y 700 -defaultsOSRD
+preplace portBus PHA_SCL -pg 1 -y 540 -defaultsOSRD
+preplace portBus EMERMEA -pg 1 -y 510 -defaultsOSRD
+preplace portBus USM_ALARM_B -pg 1 -y 690 -defaultsOSRD
+preplace portBus PWR_FAULT -pg 1 -y 790 -defaultsOSRD
+preplace portBus USM_DRIVE_A_N -pg 1 -y 740 -defaultsOSRD
+preplace portBus USM_DRIVE_B_P -pg 1 -y 800 -defaultsOSRD
+preplace inst AXI4_DEV_0 -pg 1 -lvl 3 -y 610 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -y 280 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -y 310 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y 100 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 1 3 NJ 60 NJ 60 NJ
+preplace netloc USM_ALARM_B_1 1 0 3 NJ 690 NJ 690 NJ
+preplace netloc AXI4_DEV_0_PWR_INHIBIT 1 3 1 NJ
+preplace netloc Net4 1 3 1 NJ
+preplace netloc XDCR_SDA_0_1 1 0 3 NJ 450 NJ 450 NJ
+preplace netloc AXI4_DEV_0_USM_DRIVE_A_N 1 3 1 NJ
+preplace netloc AXI4_DEV_0_USM_POWERCTRL 1 3 1 NJ
+preplace netloc Net5 1 3 1 NJ
+preplace netloc EMERMEA_1 1 0 3 NJ 510 NJ 510 NJ
+preplace netloc Net6 1 3 1 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 480
+preplace netloc USM_ALARM_A_1 1 0 3 NJ 670 NJ 670 NJ
+preplace netloc PWR_DC_OK_1 1 0 3 NJ 770 NJ 770 NJ
+preplace netloc AXI4_DEV_0_USM_DRIVE_A_P 1 3 1 NJ
+preplace netloc Net7 1 3 1 NJ
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 2 480 400 790J
+preplace netloc CTRL_IRQ_1 1 0 3 NJ 570 NJ 570 NJ
+preplace netloc Net8 1 3 1 NJ
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 30 210 450
+preplace netloc PL_UNUSED_1 1 0 3 NJ 490 NJ 490 NJ
+preplace netloc Net9 1 3 1 NJ
+preplace netloc USM_LIMIT_1 1 0 3 NJ 530 NJ 530 NJ
+preplace netloc PWR_AC_OK_1 1 0 3 NJ 750 NJ 750 NJ
+preplace netloc AXI4_DEV_0_TRIGGER 1 3 1 NJ
+preplace netloc XDCR_SCL_0_1 1 0 3 NJ 430 NJ 430 NJ
+preplace netloc AXI4_DEV_0_PHA_PROG_B 1 3 1 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 1 3 NJ 80 NJ 80 NJ
+preplace netloc XDCR_PRESENT_0_1 1 0 3 NJ 410 NJ 410 NJ
+preplace netloc USM_OUT_A_1 1 0 3 NJ 610 NJ 610 NJ
+preplace netloc USM_ALARM_Z_1 1 0 3 NJ 710 NJ 710 NJ
+preplace netloc PL_SWITCH_1 1 0 3 NJ 470 NJ 470 NJ
+preplace netloc PRESENT_1 1 0 3 NJ 550 NJ 550 NJ
+preplace netloc PWR_FAULT_1 1 0 3 NJ 790 NJ 790 NJ
+preplace netloc AXI4_DEV_0_USM_DRIVE_B_N 1 3 1 NJ
+preplace netloc Net1 1 3 1 NJ
+preplace netloc Net 1 3 1 NJ
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 20 420 460 420 780
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 790
+preplace netloc PHA_IRQ_1 1 0 3 NJ 590 NJ 590 NJ
+preplace netloc USM_OUT_B_1 1 0 3 NJ 630 NJ 630 NJ
+preplace netloc USM_OUT_Z_1 1 0 3 NJ 650 NJ 650 NJ
+preplace netloc AXI4_DEV_0_USM_DRIVE_B_P 1 3 1 NJ
+preplace netloc AXI4_DEV_0_CTRL_PROG_B 1 3 1 NJ
+preplace netloc AXI4_DEV_0_PL_LED 1 3 1 NJ
+preplace netloc Net2 1 3 1 NJ
+preplace netloc AXI4_DEV_0_IRQ 1 0 4 30 200 470J 160 NJ 160 1130
+preplace netloc USM_ALARM_D_1 1 0 3 NJ 730 NJ 730 NJ
+preplace netloc AXI4_DEV_0_USM_PWR_SW 1 3 1 NJ
+preplace netloc Net3 1 3 1 NJ
+preplace netloc rst_ps7_0_100M_interconnect_aresetn 1 1 1 470
+levelinfo -pg 1 0 250 630 960 1150 -top 0 -bot 890
+",
+}
+0

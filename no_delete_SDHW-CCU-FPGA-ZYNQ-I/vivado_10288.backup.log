@@ -1,0 +1,406 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Jan 31 15:08:36 2019
+# Process ID: 10288
+# Current directory: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12092 C:\Users\admin\Desktop\SDHW-CCU-FPGA-ZYNQ-I\SD_DA512_ZYNQ_FPGA.xpr
+# Log file: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/vivado.log
+# Journal file: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Output Repository Path: Could not find the directory 'C:/Users/admin/Desktop/FPGA_CODE/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.cache/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ipdefs/AXI4_DEV_0_0_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'CPU_AXI4_DEV_0_1' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/95e5/hdl/AXI4_DEV_v1_0_S00_AXI.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_AXI4_DEV_0_1' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/95e5/src/timescale.vh'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_AXI4_DEV_0_1' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/95e5/src/hardwarefpgadefine.vh'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_AXI4_DEV_0_1' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/95e5/src/zynqfpgaregdef.vh'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_AXI4_DEV_0_1' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/95e5/src/AXI_REG.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_AXI4_DEV_0_1' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/95e5/src/I2CMaster.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_AXI4_DEV_0_1' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/95e5/src/cur_meas.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_AXI4_DEV_0_1' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/95e5/src/deb_cnt.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_AXI4_DEV_0_1' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/95e5/src/dna.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_AXI4_DEV_0_1' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/95e5/src/hold_up.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_AXI4_DEV_0_1' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/95e5/src/input_debounce.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_AXI4_DEV_0_1' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/95e5/src/usm.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_AXI4_DEV_0_1' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/95e5/src/simulation.vh'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_AXI4_DEV_0_1' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/95e5/src/wave_gen.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_AXI4_DEV_0_1' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/95e5/hdl/AXI4_DEV_v1_0.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_AXI4_DEV_0_1' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/95e5/hdl/AXI4_DEV_v1_0_S00_AXI.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_AXI4_DEV_0_1' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/95e5/src/timescale.vh'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_AXI4_DEV_0_1' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/95e5/src/hardwarefpgadefine.vh'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_AXI4_DEV_0_1' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/95e5/src/zynqfpgaregdef.vh'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_AXI4_DEV_0_1' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/95e5/src/AXI_REG.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_AXI4_DEV_0_1' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/95e5/src/I2CMaster.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_AXI4_DEV_0_1' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/95e5/src/cur_meas.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_AXI4_DEV_0_1' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/95e5/src/deb_cnt.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_AXI4_DEV_0_1' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/95e5/src/dna.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_AXI4_DEV_0_1' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/95e5/src/hold_up.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_AXI4_DEV_0_1' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/95e5/src/input_debounce.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_AXI4_DEV_0_1' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/95e5/src/usm.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_AXI4_DEV_0_1' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/95e5/src/simulation.vh'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_AXI4_DEV_0_1' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/95e5/src/wave_gen.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_AXI4_DEV_0_1' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/95e5/hdl/AXI4_DEV_v1_0.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_processing_system7_0_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/8fd3/hdl/verilog/processing_system7_v5_5_aw_atc.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_processing_system7_0_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/8fd3/hdl/verilog/processing_system7_v5_5_b_atc.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_processing_system7_0_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/8fd3/hdl/verilog/processing_system7_v5_5_w_atc.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_processing_system7_0_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/8fd3/hdl/verilog/processing_system7_v5_5_atc.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_processing_system7_0_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/8fd3/hdl/verilog/processing_system7_v5_5_trace_buffer.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_processing_system7_0_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/ec67/hdl/axi_infrastructure_v1_1_0.vh'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_processing_system7_0_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_processing_system7_0_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/5bb9/hdl/verilog/sc_util_v1_0_3_constants.vh'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_processing_system7_0_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/5bb9/hdl/verilog/sc_util_v1_0_3_structs.svh'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_processing_system7_0_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/5bb9/hdl/sc_util_v1_0_vl_rfs.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_processing_system7_0_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/03a9/hdl/axi_protocol_checker_v2_0_vl_rfs.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_processing_system7_0_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/b9a8/hdl/axi_vip_v1_1_vl_rfs.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_processing_system7_0_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/70fd/hdl/processing_system7_vip_v1_0_5_local_params.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_processing_system7_0_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/70fd/hdl/processing_system7_vip_v1_0_vl_rfs.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_processing_system7_0_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/70fd/hdl/processing_system7_vip_v1_0_5_reg_params.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_processing_system7_0_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/70fd/hdl/processing_system7_vip_v1_0_5_reg_init.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_processing_system7_0_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/70fd/hdl/processing_system7_vip_v1_0_5_apis.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_processing_system7_0_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/70fd/hdl/processing_system7_vip_v1_0_5_unused_ports.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_processing_system7_0_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/70fd/hdl/processing_system7_vip_v1_0_5_axi_gp.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_processing_system7_0_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/70fd/hdl/processing_system7_vip_v1_0_5_axi_acp.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_processing_system7_0_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/70fd/hdl/processing_system7_vip_v1_0_5_axi_hp.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_processing_system7_0_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/sim/libps7.so'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_processing_system7_0_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/sim/libremoteport.so'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_rst_ps7_0_100M_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_rst_ps7_0_100M_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_rst_ps7_0_100M_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_rst_ps7_0_100M_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_auto_pc_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_auto_pc_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/67d8/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_auto_pc_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/7aff/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_auto_pc_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/247d/hdl/axi_data_fifo_v2_1_vl_rfs.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_auto_pc_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/ec67/hdl/axi_infrastructure_v1_1_0.vh'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_auto_pc_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_auto_pc_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/6020/hdl/axi_register_slice_v2_1_vl_rfs.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_auto_pc_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/ccfb/hdl/axi_protocol_converter_v2_1_vl_rfs.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_auto_pc_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_auto_pc_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/7aff/simulation/fifo_generator_vlog_beh.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_auto_pc_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/7aff/hdl/fifo_generator_v13_2_rfs.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_auto_pc_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/7aff/hdl/fifo_generator_v13_2_rfs.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_auto_pc_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/247d/hdl/axi_data_fifo_v2_1_vl_rfs.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_auto_pc_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/ec67/hdl/axi_infrastructure_v1_1_0.vh'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_auto_pc_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_auto_pc_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/6020/hdl/axi_register_slice_v2_1_vl_rfs.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'CPU_auto_pc_0' generated file not found 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ipshared/ccfb/hdl/axi_protocol_converter_v2_1_vl_rfs.v'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 955.457 ; gain = 225.984
+update_compile_order -fileset sources_1
+ipx::edit_ip_in_project -upgrade true -name AXI4_DEV_v1_0_project -directory C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.tmp/AXI4_DEV_v1_0_project c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ipdefs/AXI4_DEV_0_0_0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/admin/desktop/sdhw-ccu-fpga-zynq-i/sd_da512_zynq_fpga.tmp/axi4_dev_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ipdefs/AXI4_DEV_0_0_0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1014.637 ; gain = 49.180
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+CRITICAL WARNING: [IP_Flow 19-5376] File 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ipdefs/AXI4_DEV_0_0_0/src/zynqfpgaregdef.vh' is marked as a global include. The packaging process cannot preserve this information, instead the file will be marked as an include file.
+CRITICAL WARNING: [IP_Flow 19-5376] File 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ipdefs/AXI4_DEV_0_0_0/src/timescale.vh' is marked as a global include. The packaging process cannot preserve this information, instead the file will be marked as an include file.
+CRITICAL WARNING: [IP_Flow 19-5376] File 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ipdefs/AXI4_DEV_0_0_0/src/simulation.vh' is marked as a global include. The packaging process cannot preserve this information, instead the file will be marked as an include file.
+CRITICAL WARNING: [IP_Flow 19-5376] File 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ipdefs/AXI4_DEV_0_0_0/src/hardwarefpgadefine.vh' is marked as a global include. The packaging process cannot preserve this information, instead the file will be marked as an include file.
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ipdefs/AXI4_DEV_0_0_0/component.xml' ignored by IP packager.
+set_property core_revision 130 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ipdefs/AXI4_DEV_0_0_0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ipdefs/AXI4_DEV_0_0_0'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:AXI4_DEV:1.0 [get_ips  CPU_AXI4_DEV_0_1] -log ip_upgrade.log
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:user:AXI4_DEV:1.0 - AXI4_DEV_0
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <CPU> from BD file <C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/CPU.bd>
+Upgrading 'C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/CPU.bd'
+INFO: [IP_Flow 19-3422] Upgraded CPU_AXI4_DEV_0_1 (AXI4_DEV_v1.0 1.0) from revision 129 to revision 130
+Wrote  : <C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/CPU.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1112.914 ; gain = 78.363
+export_ip_user_files -of_objects [get_ips CPU_AXI4_DEV_0_1] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/CPU.bd]
+Wrote  : <C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/CPU.bd> 
+VHDL Output written to : C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/synth/CPU.v
+VHDL Output written to : C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/sim/CPU.v
+VHDL Output written to : C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/hdl/CPU_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI4_DEV_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+WARNING: [IP_Flow 19-3452] Invalid long/float value '5e+07' specified for parameter 'FREQ_HZ(clock)' for CPU_rst_ps7_0_100M_0.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-3452] Invalid long/float value '5e+07' specified for parameter 'FREQ_HZ(CLK)' for CPU_auto_pc_0.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/hw_handoff/CPU.hwh
+Generated Block Design Tcl file C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/hw_handoff/CPU_bd.tcl
+Generated Hardware Definition File C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/synth/CPU.hwdef
+generate_target: Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1280.059 ; gain = 167.145
+export_ip_user_files -of_objects [get_files C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/CPU.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/CPU.bd] -directory C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ip_user_files -ipstatic_source_dir C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.cache/compile_simlib/modelsim} {questa=C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.cache/compile_simlib/questa} {riviera=C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.cache/compile_simlib/riviera} {activehdl=C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Jan 31 15:24:18 2019] Launched synth_1...
+Run output will be captured here: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.runs/synth_1/runme.log
+[Thu Jan 31 15:24:18 2019] Launched impl_1...
+Run output will be captured here: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.runs/impl_1/runme.log
+set_param general.MaxThreads 8
+8
+ipx::edit_ip_in_project -upgrade true -name AXI4_DEV_v1_0_project -directory C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.tmp/AXI4_DEV_v1_0_project c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ipdefs/AXI4_DEV_0_0_0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/admin/desktop/sdhw-ccu-fpga-zynq-i/sd_da512_zynq_fpga.tmp/axi4_dev_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ipdefs/AXI4_DEV_0_0_0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1289.297 ; gain = 9.238
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 6
+[Thu Jan 31 15:26:05 2019] Launched synth_1...
+Run output will be captured here: c:/users/admin/desktop/sdhw-ccu-fpga-zynq-i/sd_da512_zynq_fpga.tmp/axi4_dev_v1_0_project/AXI4_DEV_v1_0_project.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Thu Jan 31 15:29:51 2019] Launched synth_1...
+Run output will be captured here: c:/users/admin/desktop/sdhw-ccu-fpga-zynq-i/sd_da512_zynq_fpga.tmp/axi4_dev_v1_0_project/AXI4_DEV_v1_0_project.runs/synth_1/runme.log
+ipx::merge_project_changes files [ipx::current_core]
+CRITICAL WARNING: [IP_Flow 19-5376] File 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ipdefs/AXI4_DEV_0_0_0/src/zynqfpgaregdef.vh' is marked as a global include. The packaging process cannot preserve this information, instead the file will be marked as an include file.
+CRITICAL WARNING: [IP_Flow 19-5376] File 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ipdefs/AXI4_DEV_0_0_0/src/timescale.vh' is marked as a global include. The packaging process cannot preserve this information, instead the file will be marked as an include file.
+CRITICAL WARNING: [IP_Flow 19-5376] File 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ipdefs/AXI4_DEV_0_0_0/src/simulation.vh' is marked as a global include. The packaging process cannot preserve this information, instead the file will be marked as an include file.
+CRITICAL WARNING: [IP_Flow 19-5376] File 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ipdefs/AXI4_DEV_0_0_0/src/hardwarefpgadefine.vh' is marked as a global include. The packaging process cannot preserve this information, instead the file will be marked as an include file.
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ipdefs/AXI4_DEV_0_0_0/component.xml' ignored by IP packager.
+set_property core_revision 131 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ipdefs/AXI4_DEV_0_0_0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ipdefs/AXI4_DEV_0_0_0'
+upgrade_ip -vlnv xilinx.com:user:AXI4_DEV:1.0 [get_ips  CPU_AXI4_DEV_0_1] -log ip_upgrade.log
+Upgrading 'C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/CPU.bd'
+INFO: [IP_Flow 19-3422] Upgraded CPU_AXI4_DEV_0_1 (AXI4_DEV_v1.0 1.0) from revision 130 to revision 131
+Wrote  : <C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/CPU.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips CPU_AXI4_DEV_0_1] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/CPU.bd]
+Wrote  : <C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/CPU.bd> 
+VHDL Output written to : C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/synth/CPU.v
+VHDL Output written to : C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/sim/CPU.v
+VHDL Output written to : C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/hdl/CPU_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI4_DEV_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-3452] Invalid long/float value '5e+07' specified for parameter 'FREQ_HZ(CLK)' for CPU_auto_pc_0.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/hw_handoff/CPU.hwh
+Generated Block Design Tcl file C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/hw_handoff/CPU_bd.tcl
+Generated Hardware Definition File C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/synth/CPU.hwdef
+export_ip_user_files -of_objects [get_files C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/CPU.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/CPU.bd] -directory C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ip_user_files -ipstatic_source_dir C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.cache/compile_simlib/modelsim} {questa=C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.cache/compile_simlib/questa} {riviera=C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.cache/compile_simlib/riviera} {activehdl=C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Jan 31 15:33:50 2019] Launched synth_1...
+Run output will be captured here: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.runs/synth_1/runme.log
+[Thu Jan 31 15:33:50 2019] Launched impl_1...
+Run output will be captured here: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 2676 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2221.855 ; gain = 15.883
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2221.855 ; gain = 15.883
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 16 instances
+
+open_run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:26 . Memory (MB): peak = 2318.707 ; gain = 976.777
+open_report: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2387.199 ; gain = 63.785
+file copy -force C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.runs/impl_1/CPU_wrapper.sysdef C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.sdk/CPU_wrapper.hdf
+
+launch_sdk -workspace C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.sdk -hwspec C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.sdk/CPU_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.sdk -hwspec C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.sdk/CPU_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+file copy -force C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.runs/impl_1/CPU_wrapper.sysdef C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.sdk/CPU_wrapper.hdf
+
+file copy -force C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.runs/impl_1/CPU_wrapper.sysdef C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.sdk/CPU_wrapper.hdf
+
+launch_sdk -workspace C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.sdk -hwspec C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.sdk/CPU_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.sdk -hwspec C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.sdk/CPU_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Jan 31 15:50:38 2019] Launched impl_1...
+Run output will be captured here: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.runs/impl_1/runme.log
+close_design
+file copy -force C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.runs/impl_1/CPU_wrapper.sysdef C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.sdk/CPU_wrapper.hdf
+
+launch_sdk -workspace C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.sdk -hwspec C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.sdk/CPU_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.sdk -hwspec C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.sdk/CPU_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+close_bd_design [get_bd_designs CPU]
+ipx::edit_ip_in_project -upgrade true -name AXI4_DEV_v1_0_project -directory C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.tmp/AXI4_DEV_v1_0_project c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ipdefs/AXI4_DEV_0_0_0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/admin/desktop/sdhw-ccu-fpga-zynq-i/sd_da512_zynq_fpga.tmp/axi4_dev_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ipdefs/AXI4_DEV_0_0_0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2396.496 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 6
+[Thu Jan 31 17:15:43 2019] Launched synth_1...
+Run output will be captured here: c:/users/admin/desktop/sdhw-ccu-fpga-zynq-i/sd_da512_zynq_fpga.tmp/axi4_dev_v1_0_project/AXI4_DEV_v1_0_project.runs/synth_1/runme.log
+ipx::merge_project_changes files [ipx::current_core]
+CRITICAL WARNING: [IP_Flow 19-5376] File 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ipdefs/AXI4_DEV_0_0_0/src/zynqfpgaregdef.vh' is marked as a global include. The packaging process cannot preserve this information, instead the file will be marked as an include file.
+CRITICAL WARNING: [IP_Flow 19-5376] File 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ipdefs/AXI4_DEV_0_0_0/src/timescale.vh' is marked as a global include. The packaging process cannot preserve this information, instead the file will be marked as an include file.
+CRITICAL WARNING: [IP_Flow 19-5376] File 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ipdefs/AXI4_DEV_0_0_0/src/simulation.vh' is marked as a global include. The packaging process cannot preserve this information, instead the file will be marked as an include file.
+CRITICAL WARNING: [IP_Flow 19-5376] File 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ipdefs/AXI4_DEV_0_0_0/src/hardwarefpgadefine.vh' is marked as a global include. The packaging process cannot preserve this information, instead the file will be marked as an include file.
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ipdefs/AXI4_DEV_0_0_0/component.xml' ignored by IP packager.
+set_property core_revision 132 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ipdefs/AXI4_DEV_0_0_0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ipdefs/AXI4_DEV_0_0_0'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:AXI4_DEV:1.0 [get_ips  CPU_AXI4_DEV_0_1] -log ip_upgrade.log
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:user:AXI4_DEV:1.0 - AXI4_DEV_0
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <CPU> from BD file <C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/CPU.bd>
+Upgrading 'C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/CPU.bd'
+INFO: [IP_Flow 19-3422] Upgraded CPU_AXI4_DEV_0_1 (AXI4_DEV_v1.0 1.0) from revision 131 to revision 132
+Wrote  : <C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/CPU.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips CPU_AXI4_DEV_0_1] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/CPU.bd]
+Wrote  : <C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/CPU.bd> 
+VHDL Output written to : C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/synth/CPU.v
+VHDL Output written to : C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/sim/CPU.v
+VHDL Output written to : C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/hdl/CPU_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI4_DEV_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-3452] Invalid long/float value '5e+07' specified for parameter 'FREQ_HZ(CLK)' for CPU_auto_pc_0.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/hw_handoff/CPU.hwh
+Generated Block Design Tcl file C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/hw_handoff/CPU_bd.tcl
+Generated Hardware Definition File C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/synth/CPU.hwdef
+export_ip_user_files -of_objects [get_files C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/CPU.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/CPU.bd] -directory C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ip_user_files -ipstatic_source_dir C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.cache/compile_simlib/modelsim} {questa=C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.cache/compile_simlib/questa} {riviera=C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.cache/compile_simlib/riviera} {activehdl=C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Jan 31 17:18:43 2019] Launched synth_1...
+Run output will be captured here: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.runs/synth_1/runme.log
+[Thu Jan 31 17:18:43 2019] Launched impl_1...
+Run output will be captured here: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.runs/impl_1/runme.log
+set_param general.MaxThreads 8
+8
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 2676 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2396.496 ; gain = 0.000
+Restored from archive | CPU: 3.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2396.496 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 16 instances
+
+open_run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 2438.410 ; gain = 41.914
+open_report: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2514.703 ; gain = 73.367
+file copy -force C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.runs/impl_1/CPU_wrapper.sysdef C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.sdk/CPU_wrapper.hdf
+
+launch_sdk -workspace C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.sdk -hwspec C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.sdk/CPU_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.sdk -hwspec C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.sdk/CPU_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+ipx::edit_ip_in_project -upgrade true -name AXI4_DEV_v1_0_project -directory C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.tmp/AXI4_DEV_v1_0_project c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ipdefs/AXI4_DEV_0_0_0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/admin/desktop/sdhw-ccu-fpga-zynq-i/sd_da512_zynq_fpga.tmp/axi4_dev_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ipdefs/AXI4_DEV_0_0_0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2529.730 ; gain = 12.922
+update_compile_order -fileset sources_1
+launch_runs impl_1 -jobs 6
+[Thu Jan 31 17:31:01 2019] Launched synth_1...
+Run output will be captured here: c:/users/admin/desktop/sdhw-ccu-fpga-zynq-i/sd_da512_zynq_fpga.tmp/axi4_dev_v1_0_project/AXI4_DEV_v1_0_project.runs/synth_1/runme.log
+[Thu Jan 31 17:31:01 2019] Launched impl_1...
+Run output will be captured here: c:/users/admin/desktop/sdhw-ccu-fpga-zynq-i/sd_da512_zynq_fpga.tmp/axi4_dev_v1_0_project/AXI4_DEV_v1_0_project.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 2813 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2727.633 ; gain = 37.824
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2727.633 ; gain = 37.824
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 16 instances
+
+open_run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2784.004 ; gain = 248.633
+open_report: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 3053.664 ; gain = 265.590
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 6 CPUs
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 31 17:37:34 2019...

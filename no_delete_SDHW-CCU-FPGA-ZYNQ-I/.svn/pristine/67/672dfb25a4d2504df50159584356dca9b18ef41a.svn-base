@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]C:\Users\admin\Desktop\SDHW-CCU-FPGA-ZYNQ-I\SD_DA512_ZYNQ_FPGA.sdk\FSBL\Debug\FSBL.elf
+	C:\Users\admin\Desktop\SDHW-CCU-FPGA-ZYNQ-I\SD_DA512_ZYNQ_FPGA.sdk\CPU_wrapper_hw_platform_0\CPU_wrapper.bit
+	C:\Users\admin\Desktop\SDHW-CCU-FPGA-ZYNQ-I\SD_DA512_ZYNQ_FPGA.sdk\u-boot.elf
+}
