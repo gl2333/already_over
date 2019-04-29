@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# 
+# Start of session at: Thu Jan 25 14:46:43 2018
+# Process ID: 157860
+# Current directory: D:/4_WORK/1_svn/FPGA/SDHW-CCU/SDHW-CCU-FPGA-ZYNQ-I-DS/SD_DA512_ZYNQ_FPGA.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: D:/4_WORK/1_svn/FPGA/SDHW-CCU/SDHW-CCU-FPGA-ZYNQ-I-DS/SD_DA512_ZYNQ_FPGA.sdk/webtalk/webtalk.log
+# Journal file: D:/4_WORK/1_svn/FPGA/SDHW-CCU/SDHW-CCU-FPGA-ZYNQ-I-DS/SD_DA512_ZYNQ_FPGA.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

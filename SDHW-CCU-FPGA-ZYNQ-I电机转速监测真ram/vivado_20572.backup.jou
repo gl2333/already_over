@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Apr 12 15:58:09 2019
+# Process ID: 20572
+# Current directory: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20388 C:\Users\admin\Desktop\SDHW-CCU-FPGA-ZYNQ-I\SD_DA512_ZYNQ_FPGA.xpr
+# Log file: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/vivado.log
+# Journal file: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.xpr
+update_compile_order -fileset sources_1
+ipx::edit_ip_in_project -upgrade true -name AXI4_DEV_v1_0_project -directory C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.tmp/AXI4_DEV_v1_0_project c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.ipdefs/AXI4_DEV_0_0_0/component.xml
+update_compile_order -fileset sources_1
+close_project
