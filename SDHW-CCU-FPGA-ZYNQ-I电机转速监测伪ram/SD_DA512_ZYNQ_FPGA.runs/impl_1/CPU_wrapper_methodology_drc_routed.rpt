@@ -1,0 +1,1230 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Mon Apr 22 16:00:16 2019
+| Host         : SDHW-GL running 64-bit major release  (build 9200)
+| Command      : report_methodology -file CPU_wrapper_methodology_drc_routed.rpt -pb CPU_wrapper_methodology_drc_routed.pb -rpx CPU_wrapper_methodology_drc_routed.rpx
+| Design       : CPU_wrapper
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 194
++-----------+----------+---------------------------------------------------+------------+
+| Rule      | Severity | Description                                       | Violations |
++-----------+----------+---------------------------------------------------+------------+
+| TIMING-18 | Warning  | Missing input or output delay                     | 82         |
+| XDCC-2    | Warning  | Scoped Non-Timing constraint/property overwritten | 112        |
++-----------+----------+---------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on CLOCK_SCL relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on CLOCK_SDA relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on CTRL_IRQ[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on CTRL_IRQ[1] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on CTRL_SCL[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on CTRL_SCL[1] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on CTRL_SDA[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An input delay is missing on CTRL_SDA[1] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An input delay is missing on EMERMEA[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An input delay is missing on EMERMEA[1] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An input delay is missing on PHA_IRQ[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An input delay is missing on PHA_IRQ[1] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An input delay is missing on PHA_SCL[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An input delay is missing on PHA_SCL[1] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An input delay is missing on PHA_SDA[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An input delay is missing on PHA_SDA[1] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An input delay is missing on PRESENT[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An input delay is missing on PRESENT[1] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An input delay is missing on PWR_AC_OK[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An input delay is missing on PWR_AC_OK[1] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An input delay is missing on PWR_DC_OK[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#22 Warning
+Missing input or output delay  
+An input delay is missing on PWR_DC_OK[1] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#23 Warning
+Missing input or output delay  
+An input delay is missing on PWR_FAULT[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#24 Warning
+Missing input or output delay  
+An input delay is missing on PWR_FAULT[1] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#25 Warning
+Missing input or output delay  
+An input delay is missing on PWR_SCL[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#26 Warning
+Missing input or output delay  
+An input delay is missing on PWR_SCL[1] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#27 Warning
+Missing input or output delay  
+An input delay is missing on PWR_SDA[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#28 Warning
+Missing input or output delay  
+An input delay is missing on PWR_SDA[1] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#29 Warning
+Missing input or output delay  
+An input delay is missing on RTC_SCL relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#30 Warning
+Missing input or output delay  
+An input delay is missing on RTC_SDA relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#31 Warning
+Missing input or output delay  
+An input delay is missing on USM_ALARM_A[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#32 Warning
+Missing input or output delay  
+An input delay is missing on USM_ALARM_A[1] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#33 Warning
+Missing input or output delay  
+An input delay is missing on USM_ALARM_A[2] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#34 Warning
+Missing input or output delay  
+An input delay is missing on USM_ALARM_A[3] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#35 Warning
+Missing input or output delay  
+An input delay is missing on USM_ALARM_B[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#36 Warning
+Missing input or output delay  
+An input delay is missing on USM_ALARM_B[1] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#37 Warning
+Missing input or output delay  
+An input delay is missing on USM_ALARM_B[2] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#38 Warning
+Missing input or output delay  
+An input delay is missing on USM_ALARM_B[3] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#39 Warning
+Missing input or output delay  
+An input delay is missing on USM_LIMIT[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#40 Warning
+Missing input or output delay  
+An input delay is missing on USM_LIMIT[1] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#41 Warning
+Missing input or output delay  
+An input delay is missing on USM_LIMIT[2] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#42 Warning
+Missing input or output delay  
+An input delay is missing on USM_LIMIT[3] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#43 Warning
+Missing input or output delay  
+An input delay is missing on USM_OUT_A[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#44 Warning
+Missing input or output delay  
+An input delay is missing on USM_OUT_A[1] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#45 Warning
+Missing input or output delay  
+An input delay is missing on USM_OUT_A[2] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#46 Warning
+Missing input or output delay  
+An input delay is missing on USM_OUT_A[3] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#47 Warning
+Missing input or output delay  
+An input delay is missing on USM_OUT_B[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#48 Warning
+Missing input or output delay  
+An input delay is missing on USM_OUT_B[1] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#49 Warning
+Missing input or output delay  
+An input delay is missing on USM_OUT_B[2] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#50 Warning
+Missing input or output delay  
+An input delay is missing on USM_OUT_B[3] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#51 Warning
+Missing input or output delay  
+An output delay is missing on CTRL_PROG_B[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#52 Warning
+Missing input or output delay  
+An output delay is missing on CTRL_PROG_B[1] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#53 Warning
+Missing input or output delay  
+An output delay is missing on PHA_PROG_B[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#54 Warning
+Missing input or output delay  
+An output delay is missing on PHA_PROG_B[1] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#55 Warning
+Missing input or output delay  
+An output delay is missing on PL_LED[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#56 Warning
+Missing input or output delay  
+An output delay is missing on PL_LED[1] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#57 Warning
+Missing input or output delay  
+An output delay is missing on PL_LED[2] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#58 Warning
+Missing input or output delay  
+An output delay is missing on PL_LED[3] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#59 Warning
+Missing input or output delay  
+An output delay is missing on PWR_INHIBIT[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#60 Warning
+Missing input or output delay  
+An output delay is missing on PWR_INHIBIT[1] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#61 Warning
+Missing input or output delay  
+An output delay is missing on TRIGGER relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#62 Warning
+Missing input or output delay  
+An output delay is missing on USM_DRIVE_A_N[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#63 Warning
+Missing input or output delay  
+An output delay is missing on USM_DRIVE_A_N[1] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#64 Warning
+Missing input or output delay  
+An output delay is missing on USM_DRIVE_A_N[2] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#65 Warning
+Missing input or output delay  
+An output delay is missing on USM_DRIVE_A_N[3] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#66 Warning
+Missing input or output delay  
+An output delay is missing on USM_DRIVE_A_P[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#67 Warning
+Missing input or output delay  
+An output delay is missing on USM_DRIVE_A_P[1] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#68 Warning
+Missing input or output delay  
+An output delay is missing on USM_DRIVE_A_P[2] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#69 Warning
+Missing input or output delay  
+An output delay is missing on USM_DRIVE_A_P[3] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#70 Warning
+Missing input or output delay  
+An output delay is missing on USM_DRIVE_B_N[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#71 Warning
+Missing input or output delay  
+An output delay is missing on USM_DRIVE_B_N[1] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#72 Warning
+Missing input or output delay  
+An output delay is missing on USM_DRIVE_B_N[2] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#73 Warning
+Missing input or output delay  
+An output delay is missing on USM_DRIVE_B_N[3] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#74 Warning
+Missing input or output delay  
+An output delay is missing on USM_DRIVE_B_P[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#75 Warning
+Missing input or output delay  
+An output delay is missing on USM_DRIVE_B_P[1] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#76 Warning
+Missing input or output delay  
+An output delay is missing on USM_DRIVE_B_P[2] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#77 Warning
+Missing input or output delay  
+An output delay is missing on USM_DRIVE_B_P[3] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#78 Warning
+Missing input or output delay  
+An output delay is missing on USM_POWERCTRL[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#79 Warning
+Missing input or output delay  
+An output delay is missing on USM_POWERCTRL[1] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#80 Warning
+Missing input or output delay  
+An output delay is missing on USM_POWERCTRL[2] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#81 Warning
+Missing input or output delay  
+An output delay is missing on USM_POWERCTRL[3] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#82 Warning
+Missing input or output delay  
+An output delay is missing on USM_PWR_SW relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+XDCC-2#1 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_addr[0] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 643)
+Related violations: <none>
+
+XDCC-2#2 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_addr[10] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 639)
+Related violations: <none>
+
+XDCC-2#3 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_addr[11] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 635)
+Related violations: <none>
+
+XDCC-2#4 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_addr[12] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 631)
+Related violations: <none>
+
+XDCC-2#5 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_addr[13] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 627)
+Related violations: <none>
+
+XDCC-2#6 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_addr[14] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 623)
+Related violations: <none>
+
+XDCC-2#7 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_addr[1] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 619)
+Related violations: <none>
+
+XDCC-2#8 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_addr[2] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 615)
+Related violations: <none>
+
+XDCC-2#9 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_addr[3] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 611)
+Related violations: <none>
+
+XDCC-2#10 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_addr[4] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 607)
+Related violations: <none>
+
+XDCC-2#11 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_addr[5] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 603)
+Related violations: <none>
+
+XDCC-2#12 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_addr[6] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 599)
+Related violations: <none>
+
+XDCC-2#13 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_addr[7] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 595)
+Related violations: <none>
+
+XDCC-2#14 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_addr[8] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 591)
+Related violations: <none>
+
+XDCC-2#15 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_addr[9] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 587)
+Related violations: <none>
+
+XDCC-2#16 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_ba[0] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 583)
+Related violations: <none>
+
+XDCC-2#17 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_ba[1] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 579)
+Related violations: <none>
+
+XDCC-2#18 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_ba[2] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 575)
+Related violations: <none>
+
+XDCC-2#19 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_cas_n overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 571)
+Related violations: <none>
+
+XDCC-2#20 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_ck_n overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 567)
+Related violations: <none>
+
+XDCC-2#21 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_ck_p overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 563)
+Related violations: <none>
+
+XDCC-2#22 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_cke overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 559)
+Related violations: <none>
+
+XDCC-2#23 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_cs_n overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 555)
+Related violations: <none>
+
+XDCC-2#24 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dm[0] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 551)
+Related violations: <none>
+
+XDCC-2#25 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dm[1] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 547)
+Related violations: <none>
+
+XDCC-2#26 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dm[2] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 543)
+Related violations: <none>
+
+XDCC-2#27 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dm[3] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 539)
+Related violations: <none>
+
+XDCC-2#28 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dq[0] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 535)
+Related violations: <none>
+
+XDCC-2#29 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dq[10] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 531)
+Related violations: <none>
+
+XDCC-2#30 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dq[11] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 527)
+Related violations: <none>
+
+XDCC-2#31 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dq[12] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 523)
+Related violations: <none>
+
+XDCC-2#32 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dq[13] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 519)
+Related violations: <none>
+
+XDCC-2#33 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dq[14] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 515)
+Related violations: <none>
+
+XDCC-2#34 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dq[15] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 511)
+Related violations: <none>
+
+XDCC-2#35 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dq[16] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 507)
+Related violations: <none>
+
+XDCC-2#36 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dq[17] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 503)
+Related violations: <none>
+
+XDCC-2#37 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dq[18] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 499)
+Related violations: <none>
+
+XDCC-2#38 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dq[19] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 495)
+Related violations: <none>
+
+XDCC-2#39 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dq[1] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 491)
+Related violations: <none>
+
+XDCC-2#40 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dq[20] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 487)
+Related violations: <none>
+
+XDCC-2#41 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dq[21] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 483)
+Related violations: <none>
+
+XDCC-2#42 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dq[22] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 479)
+Related violations: <none>
+
+XDCC-2#43 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dq[23] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 475)
+Related violations: <none>
+
+XDCC-2#44 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dq[24] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 471)
+Related violations: <none>
+
+XDCC-2#45 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dq[25] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 467)
+Related violations: <none>
+
+XDCC-2#46 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dq[26] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 463)
+Related violations: <none>
+
+XDCC-2#47 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dq[27] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 459)
+Related violations: <none>
+
+XDCC-2#48 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dq[28] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 455)
+Related violations: <none>
+
+XDCC-2#49 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dq[29] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 451)
+Related violations: <none>
+
+XDCC-2#50 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dq[2] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 447)
+Related violations: <none>
+
+XDCC-2#51 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dq[30] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 443)
+Related violations: <none>
+
+XDCC-2#52 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dq[31] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 439)
+Related violations: <none>
+
+XDCC-2#53 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dq[3] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 435)
+Related violations: <none>
+
+XDCC-2#54 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dq[4] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 431)
+Related violations: <none>
+
+XDCC-2#55 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dq[5] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 427)
+Related violations: <none>
+
+XDCC-2#56 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dq[6] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 423)
+Related violations: <none>
+
+XDCC-2#57 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dq[7] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 419)
+Related violations: <none>
+
+XDCC-2#58 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dq[8] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 415)
+Related violations: <none>
+
+XDCC-2#59 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dq[9] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 411)
+Related violations: <none>
+
+XDCC-2#60 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dqs_n[0] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 407)
+Related violations: <none>
+
+XDCC-2#61 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dqs_n[1] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 403)
+Related violations: <none>
+
+XDCC-2#62 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dqs_n[2] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 399)
+Related violations: <none>
+
+XDCC-2#63 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dqs_n[3] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 395)
+Related violations: <none>
+
+XDCC-2#64 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dqs_p[0] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 391)
+Related violations: <none>
+
+XDCC-2#65 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dqs_p[1] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 387)
+Related violations: <none>
+
+XDCC-2#66 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dqs_p[2] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 383)
+Related violations: <none>
+
+XDCC-2#67 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_dqs_p[3] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 379)
+Related violations: <none>
+
+XDCC-2#68 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_odt overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 371)
+Related violations: <none>
+
+XDCC-2#69 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_ras_n overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 367)
+Related violations: <none>
+
+XDCC-2#70 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_reset_n overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 375)
+Related violations: <none>
+
+XDCC-2#71 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on DDR_we_n overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 363)
+Related violations: <none>
+
+XDCC-2#72 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_ddr_vrn overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 359)
+Related violations: <none>
+
+XDCC-2#73 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_ddr_vrp overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 355)
+Related violations: <none>
+
+XDCC-2#74 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[16] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 254)
+Related violations: <none>
+
+XDCC-2#75 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[17] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 248)
+Related violations: <none>
+
+XDCC-2#76 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[18] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 242)
+Related violations: <none>
+
+XDCC-2#77 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[19] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 236)
+Related violations: <none>
+
+XDCC-2#78 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[20] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 230)
+Related violations: <none>
+
+XDCC-2#79 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[21] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 224)
+Related violations: <none>
+
+XDCC-2#80 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[22] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 218)
+Related violations: <none>
+
+XDCC-2#81 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[23] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 212)
+Related violations: <none>
+
+XDCC-2#82 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[24] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 206)
+Related violations: <none>
+
+XDCC-2#83 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[25] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 200)
+Related violations: <none>
+
+XDCC-2#84 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[26] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 194)
+Related violations: <none>
+
+XDCC-2#85 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[27] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 188)
+Related violations: <none>
+
+XDCC-2#86 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[28] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 182)
+Related violations: <none>
+
+XDCC-2#87 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[29] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 176)
+Related violations: <none>
+
+XDCC-2#88 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[30] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 170)
+Related violations: <none>
+
+XDCC-2#89 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[31] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 164)
+Related violations: <none>
+
+XDCC-2#90 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[32] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 158)
+Related violations: <none>
+
+XDCC-2#91 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[33] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 152)
+Related violations: <none>
+
+XDCC-2#92 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[34] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 146)
+Related violations: <none>
+
+XDCC-2#93 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[35] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 140)
+Related violations: <none>
+
+XDCC-2#94 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[36] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 134)
+Related violations: <none>
+
+XDCC-2#95 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[37] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 128)
+Related violations: <none>
+
+XDCC-2#96 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[38] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 122)
+Related violations: <none>
+
+XDCC-2#97 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[39] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 116)
+Related violations: <none>
+
+XDCC-2#98 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[40] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 110)
+Related violations: <none>
+
+XDCC-2#99 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[41] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 104)
+Related violations: <none>
+
+XDCC-2#100 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[42] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 98)
+Related violations: <none>
+
+XDCC-2#101 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[43] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 92)
+Related violations: <none>
+
+XDCC-2#102 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[44] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 86)
+Related violations: <none>
+
+XDCC-2#103 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[45] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 80)
+Related violations: <none>
+
+XDCC-2#104 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[46] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 74)
+Related violations: <none>
+
+XDCC-2#105 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[47] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 68)
+Related violations: <none>
+
+XDCC-2#106 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[48] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 61)
+Related violations: <none>
+
+XDCC-2#107 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[49] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 54)
+Related violations: <none>
+
+XDCC-2#108 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[50] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 48)
+Related violations: <none>
+
+XDCC-2#109 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[51] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 42)
+Related violations: <none>
+
+XDCC-2#110 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[52] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 36)
+Related violations: <none>
+
+XDCC-2#111 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_mio[53] overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 30)
+Related violations: <none>
+
+XDCC-2#112 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on FIXED_IO_ps_srstb overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/constrs_1/Core_ZYNQ.xdc (Line: 199)
+Previous Source: c:/Users/admin/Desktop/SDHW-CCU-FPGA-ZYNQ-I/SD_DA512_ZYNQ_FPGA.srcs/sources_1/bd/CPU/ip/CPU_processing_system7_0_0_1/CPU_processing_system7_0_0.xdc (Line: 650)
+Related violations: <none>
+
+
